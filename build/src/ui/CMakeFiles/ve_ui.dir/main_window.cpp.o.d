@@ -571,6 +571,18 @@ src/ui/CMakeFiles/ve_ui.dir/main_window.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qspinbox.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QComboBox \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcombobox.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFormLayout \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qformlayout.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLayout \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGroupBox \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgroupbox.h \
  /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/core/project.h \
  /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/core/sequence.h \
  /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/core/track.h \
@@ -589,7 +601,20 @@ src/ui/CMakeFiles/ve_ui.dir/main_window.cpp.o: \
  /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/playback/playback_engine.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QElapsedTimer \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qelapsedtimer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/QAudioSink \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudiosink.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimediaglobal.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimedia-config.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimediaexports.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtaudio.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudio.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudioformat.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudiodevice.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QBuffer \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbuffer.h \
  /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/render/media_decoder.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/QAudioFormat \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudioformat.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMenuBar \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmenubar.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmenu.h \
@@ -613,10 +638,6 @@ src/ui/CMakeFiles/ve_ui.dir/main_window.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialogbuttonbox.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QToolBar \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtoolbar.h \

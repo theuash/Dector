@@ -13,5 +13,6 @@ pkg_check_modules(AVCODEC IMPORTED_TARGET libavcodec)
 pkg_check_modules(AVFORMAT IMPORTED_TARGET libavformat)
 pkg_check_modules(AVUTIL IMPORTED_TARGET libavutil)
 pkg_check_modules(SWSCALE IMPORTED_TARGET libswscale)
+pkg_check_modules(SWRESAMPLE IMPORTED_TARGET libswresample)
 
 add_subdirectory(src)

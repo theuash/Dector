@@ -8,6 +8,7 @@
 #include "command.h"
 #include "playback_engine.h"
 #include "media_decoder.h"
+#include "export_pipeline.h"
 #include <QMenuBar>
 #include <QMenu>
 #include <QAction>
@@ -20,6 +21,8 @@
 #include <QShortcut>
 #include <QFrame>
 #include <QButtonGroup>
+#include <QSpinBox>
+#include <QDoubleSpinBox>
 
 MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent) {
     resize(1600, 900);
@@ -254,6 +257,8 @@ void MainWindow::setupMenuBar() {
     file->addSeparator();
     file->addAction("&Import Media...", QKeySequence("Ctrl+I"), this, &MainWindow::onImportMedia);
     file->addSeparator();
+    file->addAction("&Export...", QKeySequence("Ctrl+E"), this, &MainWindow::onExport);
+    file->addSeparator();
     file->addAction("&Quit", QKeySequence::Quit, this, &QWidget::close);
 
     auto* edit = menuBar()->addMenu("&Edit");
@@ -266,6 +271,12 @@ void MainWindow::setupMenuBar() {
     });
     timeline->addAction("Add &Audio Track", QKeySequence(), this, [this]() {
         m_commandStack->push(std::make_unique<AddTrackCommand>(m_project, TrackType::Audio));
+    });
+
+    auto* view = menuBar()->addMenu("&View");
+    view->addAction("Reset Layout", QKeySequence(), this, [this]() {
+        m_mainSplitter->setSizes({300, 1000, 250});
+        m_verticalSplitter->setSizes({700, 300});
     });
 }
 
@@ -321,8 +332,24 @@ void MainWindow::onImportMedia() {
     QStringList paths = QFileDialog::getOpenFileNames(this, "Import Media", {},
         "Video (*.mp4 *.avi *.mov *.mkv *.webm);;Audio (*.mp3 *.wav *.flac *.aac);;All Files (*)");
     if (paths.isEmpty()) return;
-    for (const auto& p : paths)
+    for (const auto& p : paths) {
         m_commandStack->push(std::make_unique<AddAssetCommand>(m_project, p));
+        // Update duration after command executes
+        MediaDecoder decoder;
+        if (decoder.open(p)) {
+            double dur = decoder.duration();
+            if (dur > 0) {
+                // Find asset by path and update
+                const auto& assets = m_project->assets();
+                for (const auto& a : assets) {
+                    if (a->path == p) {
+                        a->duration = RationalTime::fromSeconds(dur, 30.0);
+                        break;
+                    }
+                }
+            }
+        }
+    }
 }
 
 void MainWindow::onUndo() { m_commandStack->undo(); }
@@ -544,4 +571,68 @@ void MainWindow::decodeFrameAt(const QString& path, double seconds) {
             if (frame) { m_viewer->setFrame(*frame); return; }
         }
     }
+}
+
+void MainWindow::onExport() {
+    if (!m_project || !m_project->currentSequence()) {
+        QMessageBox::warning(this, "Export", "No sequence to export");
+        return;
+    }
+
+    QString path = QFileDialog::getSaveFileName(this, "Export Video", {},
+        "MP4 (*.mp4);;MOV (*.mov);;AVI (*.avi);;All Files (*)");
+    if (path.isEmpty()) return;
+
+    // Simple export dialog
+    QDialog dlg(this);
+    dlg.setWindowTitle("Export Settings");
+    dlg.setMinimumWidth(350);
+    auto* layout = new QVBoxLayout(&dlg);
+
+    auto* form = new QFormLayout();
+    auto* widthSpin = new QSpinBox(&dlg);
+    widthSpin->setRange(160, 7680);
+    widthSpin->setValue(1920);
+    form->addRow("Width:", widthSpin);
+
+    auto* heightSpin = new QSpinBox(&dlg);
+    heightSpin->setRange(120, 4320);
+    heightSpin->setValue(1080);
+    form->addRow("Height:", heightSpin);
+
+    auto* fpsSpin = new QDoubleSpinBox(&dlg);
+    fpsSpin->setRange(1, 120);
+    fpsSpin->setValue(30);
+    form->addRow("FPS:", fpsSpin);
+
+    auto* crfSpin = new QSpinBox(&dlg);
+    crfSpin->setRange(0, 51);
+    crfSpin->setValue(22);
+    form->addRow("Quality (CRF):", crfSpin);
+
+    auto* presetCombo = new QComboBox(&dlg);
+    presetCombo->addItems({"ultrafast", "superfast", "veryfast", "faster", "fast", "medium", "slow", "slower", "veryslow"});
+    presetCombo->setCurrentText("medium");
+    form->addRow("Preset:", presetCombo);
+
+    layout->addLayout(form);
+
+    auto* btnBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, &dlg);
+    connect(btnBox, &QDialogButtonBox::accepted, &dlg, &QDialog::accept);
+    connect(btnBox, &QDialogButtonBox::rejected, &dlg, &QDialog::reject);
+    layout->addWidget(btnBox);
+
+    if (dlg.exec() != QDialog::Accepted) return;
+
+    m_exportPipeline = std::make_unique<ExportPipeline>(this);
+    connect(m_exportPipeline.get(), &ExportPipeline::progressChanged, this, [this](double p) {
+        statusBar()->showMessage(QString("Exporting: %1%").arg(p, 0, 'f', 1));
+    });
+    connect(m_exportPipeline.get(), &ExportPipeline::finished, this, [this](bool ok, const QString& msg) {
+        statusBar()->showMessage(ok ? "Export complete" : ("Export failed: " + msg), 5000);
+        QMessageBox::information(this, "Export", ok ? "Export completed successfully!" : msg);
+    });
+
+    m_exportPipeline->exportSequence(m_project, path,
+        widthSpin->value(), heightSpin->value(), fpsSpin->value());
 }

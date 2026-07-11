@@ -430,5 +430,34 @@ src/render/CMakeFiles/ve_render.dir/gl_renderer.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsize.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvector4d.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qgenericmatrix.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtOpenGL/QOpenGLShaderProgram \
+ /usr/include/x86_64-linux-gnu/qt6/QtOpenGL/qopenglshaderprogram.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtOpenGL/qtopenglglobal.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtOpenGL/qtopenglexports.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qvector2d.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qmatrix4x4.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtOpenGL/QOpenGLVertexArrayObject \
+ /usr/include/x86_64-linux-gnu/qt6/QtOpenGL/qopenglvertexarrayobject.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtOpenGL/QOpenGLBuffer \
+ /usr/include/x86_64-linux-gnu/qt6/QtOpenGL/qopenglbuffer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtOpenGL/QOpenGLTexture \
+ /usr/include/x86_64-linux-gnu/qt6/QtOpenGL/qopengltexture.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qimage.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgb.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgba64.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpaintdevice.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpolygon.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qregion.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qspan.h \
+ /usr/include/c++/15/cassert \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qline.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QScopedPointer \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopedpointer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h

@@ -17,6 +17,7 @@ class TimelineWidget;
 class TimeRuler;
 class EffectsPanel;
 class PlaybackEngine;
+class ExportPipeline;
 class MediaDecoder;
 class QButtonGroup;
 
@@ -47,6 +48,7 @@ private slots:
                         const QString& paramName, double value);
     void onBlendChanged(const QString& trackId, const QString& clipId, int mode);
     void onToolChanged(int id);
+    void onExport();
 
 private:
     void setupMenuBar();
@@ -80,6 +82,7 @@ private:
     QButtonGroup* m_toolGroup = nullptr;
     QString m_decoderPath;
     bool m_sourceMode = false;
+    std::unique_ptr<ExportPipeline> m_exportPipeline;
 
     QString m_currentFilePath;
 };

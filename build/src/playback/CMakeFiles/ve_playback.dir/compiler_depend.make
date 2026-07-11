@@ -126,10 +126,12 @@ src/playback/CMakeFiles/ve_playback.dir/playback_engine.cpp.o: /run/media/uash/V
   /usr/include/c++/15/bits/stl_list.h \
   /usr/include/c++/15/bits/stl_map.h \
   /usr/include/c++/15/bits/stl_multimap.h \
+  /usr/include/c++/15/bits/stl_multiset.h \
   /usr/include/c++/15/bits/stl_numeric.h \
   /usr/include/c++/15/bits/stl_pair.h \
   /usr/include/c++/15/bits/stl_raw_storage_iter.h \
   /usr/include/c++/15/bits/stl_relops.h \
+  /usr/include/c++/15/bits/stl_set.h \
   /usr/include/c++/15/bits/stl_tempbuf.h \
   /usr/include/c++/15/bits/stl_tree.h \
   /usr/include/c++/15/bits/stl_uninitialized.h \
@@ -144,6 +146,7 @@ src/playback/CMakeFiles/ve_playback.dir/playback_engine.cpp.o: /run/media/uash/V
   /usr/include/c++/15/bits/uniform_int_dist.h \
   /usr/include/c++/15/bits/unique_ptr.h \
   /usr/include/c++/15/bits/unordered_map.h \
+  /usr/include/c++/15/bits/unordered_set.h \
   /usr/include/c++/15/bits/uses_allocator.h \
   /usr/include/c++/15/bits/uses_allocator_args.h \
   /usr/include/c++/15/bits/utility.h \
@@ -209,6 +212,7 @@ src/playback/CMakeFiles/ve_playback.dir/playback_engine.cpp.o: /run/media/uash/V
   /usr/include/c++/15/pstl/pstl_config.h \
   /usr/include/c++/15/ranges \
   /usr/include/c++/15/ratio \
+  /usr/include/c++/15/set \
   /usr/include/c++/15/span \
   /usr/include/c++/15/sstream \
   /usr/include/c++/15/stdexcept \
@@ -233,6 +237,7 @@ src/playback/CMakeFiles/ve_playback.dir/playback_engine.cpp.o: /run/media/uash/V
   /usr/include/c++/15/type_traits \
   /usr/include/c++/15/typeinfo \
   /usr/include/c++/15/unordered_map \
+  /usr/include/c++/15/unordered_set \
   /usr/include/c++/15/utility \
   /usr/include/c++/15/valarray \
   /usr/include/c++/15/variant \
@@ -417,6 +422,8 @@ src/playback/CMakeFiles/ve_playback.dir/playback_engine.cpp.o: /run/media/uash/V
   /usr/include/x86_64-linux-gnu/c++/15/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QBuffer \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QElapsedTimer \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
@@ -425,11 +432,13 @@ src/playback/CMakeFiles/ve_playback.dir/playback_engine.cpp.o: /run/media/uash/V
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QUuid \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20memory.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20type_traits.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q23type_traits.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstracteventdispatcher.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qalloc.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qanystringview.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydata.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydataops.h \
@@ -440,6 +449,7 @@ src/playback/CMakeFiles/ve_playback.dir/playback_engine.cpp.o: /run/media/uash/V
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasicatomic.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbuffer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayalgorithms.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearraylist.h \
@@ -454,10 +464,12 @@ src/playback/CMakeFiles/ve_playback.dir/playback_engine.cpp.o: /run/media/uash/V
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerfwd.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerinfo.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainertools_impl.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontiguouscache.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdarwinhelpers.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdeadlinetimer.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qelapsedtimer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qendian.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h \
@@ -470,7 +482,9 @@ src/playback/CMakeFiles/ve_playback.dir/playback_engine.cpp.o: /run/media/uash/V
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qgenericatomic.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobalstatic.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevicebase.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterable.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterator.h \
@@ -495,8 +509,12 @@ src/playback/CMakeFiles/ve_playback.dir/playback_engine.cpp.o: /run/media/uash/V
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopedpointer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopeguard.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata_impl.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer_impl.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qspan.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qstdlibdetection.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringalgorithms.h \
@@ -521,6 +539,7 @@ src/playback/CMakeFiles/ve_playback.dir/playback_engine.cpp.o: /run/media/uash/V
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtdeprecationdefinitions.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtdeprecationmarkers.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtenvironmentvariables.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtformat_impl.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtnoop.h \
@@ -534,9 +553,23 @@ src/playback/CMakeFiles/ve_playback.dir/playback_engine.cpp.o: /run/media/uash/V
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtypes.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qutf8stringview.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/quuid.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/QAudioFormat \
+  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/QAudioSink \
+  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudio.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudiodevice.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudioformat.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudiosink.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtaudio.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimedia-config.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimediaexports.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimediaglobal.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
@@ -960,11 +993,13 @@ src/playback/CMakeFiles/ve_playback.dir/ve_playback_autogen/mocs_compilation.cpp
   /usr/include/x86_64-linux-gnu/c++/15/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QBuffer \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QElapsedTimer \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20algorithm.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20memory.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20type_traits.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q23type_traits.h \
@@ -978,6 +1013,7 @@ src/playback/CMakeFiles/ve_playback.dir/ve_playback_autogen/mocs_compilation.cpp
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qatomic_cxx11.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasicatomic.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbuffer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayalgorithms.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearraylist.h \
@@ -1005,6 +1041,7 @@ src/playback/CMakeFiles/ve_playback.dir/ve_playback_autogen/mocs_compilation.cpp
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobalstatic.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevicebase.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterable.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterator.h \
@@ -1028,6 +1065,8 @@ src/playback/CMakeFiles/ve_playback.dir/ve_playback_autogen/mocs_compilation.cpp
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopedpointer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopeguard.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qspan.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qstdlibdetection.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringalgorithms.h \
@@ -1069,6 +1108,18 @@ src/playback/CMakeFiles/ve_playback.dir/ve_playback_autogen/mocs_compilation.cpp
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/QAudioSink \
+  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudio.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudiodevice.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudioformat.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudiosink.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtaudio.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimedia-config.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimediaexports.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimediaglobal.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
@@ -1090,19 +1141,57 @@ src/playback/ve_playback_autogen/EWIEGA46WW/moc_playback_engine.cpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/15/include/stdbool.h:
+
+/usr/include/x86_64-linux-gnu/sys/types.h:
+
+/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
+
+/usr/include/x86_64-linux-gnu/sys/select.h:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimediaglobal.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimediaexports.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimedia-config.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudiosink.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudioformat.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudiodevice.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudio.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtMultimedia/QAudioSink:
+
+/usr/include/x86_64-linux-gnu/qt6/QtMultimedia/QAudioFormat:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qutf8stringview.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qtypes.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qtversion.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qtresource.h:
 
 /usr/include/linux/stddef.h:
 
 /usr/include/c++/15/list:
-
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
-
-/usr/include/c++/15/bits/locale_classes.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h:
 
 /usr/include/linux/posix_types.h:
 
@@ -1111,10 +1200,6 @@ src/playback/ve_playback_autogen/EWIEGA46WW/moc_playback_engine.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h:
 
 /usr/include/features.h:
-
-/usr/include/c++/15/bits/fs_fwd.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
 /usr/include/c++/15/unordered_map:
 
@@ -1136,11 +1221,13 @@ src/playback/ve_playback_autogen/EWIEGA46WW/moc_playback_engine.cpp:
 
 /usr/include/c++/15/pstl/glue_algorithm_defs.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h:
+
+/usr/include/c++/15/bits/charconv.h:
+
 /usr/include/c++/15/tr1/legendre_function.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
-
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
 /usr/include/c++/15/tr1/bessel_function.tcc:
 
@@ -1164,6 +1251,8 @@ src/playback/ve_playback_autogen/EWIEGA46WW/moc_playback_engine.cpp:
 
 /usr/include/c++/15/sstream:
 
+/usr/include/c++/15/set:
+
 /usr/include/c++/15/ranges:
 
 /usr/include/c++/15/pstl/execution_defs.h:
@@ -1174,17 +1263,15 @@ src/playback/ve_playback_autogen/EWIEGA46WW/moc_playback_engine.cpp:
 
 /usr/include/c++/15/bits/predefined_ops.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qttypetraits.h:
+
+/usr/include/c++/15/numeric:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
 /usr/include/c++/15/new:
 
 /usr/include/linux/errno.h:
-
-/usr/include/c++/15/numeric:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qttypetraits.h:
-
-/usr/include/nlohmann/detail/conversions/from_json.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
@@ -1224,11 +1311,13 @@ src/playback/ve_playback_autogen/EWIEGA46WW/moc_playback_engine.cpp:
 
 /usr/include/c++/15/cmath:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h:
+
+/usr/include/c++/15/filesystem:
+
 /usr/include/c++/15/bits/requires_hosted.h:
 
 /usr/include/c++/15/bits/slice_array.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
 /usr/include/c++/15/span:
 
@@ -1256,15 +1345,15 @@ src/playback/ve_playback_autogen/EWIEGA46WW/moc_playback_engine.cpp:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/cpu_defines.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h:
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+/usr/include/c++/15/bits/unordered_set.h:
 
 /usr/include/c++/15/bits/string_view.tcc:
 
 /usr/include/nlohmann/detail/conversions/to_chars.hpp:
 
 /usr/include/c++/15/tr1/exp_integral.tcc:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qtversion.h:
 
 /usr/include/c++/15/cassert:
 
@@ -1274,7 +1363,11 @@ src/playback/ve_playback_autogen/EWIEGA46WW/moc_playback_engine.cpp:
 
 /usr/include/c++/15/bits/stream_iterator.h:
 
-/usr/include/x86_64-linux-gnu/sys/select.h:
+/usr/include/c++/15/unordered_set:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QString:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearraylist.h:
 
 /usr/include/c++/15/cwctype:
 
@@ -1340,6 +1433,10 @@ src/playback/ve_playback_autogen/EWIEGA46WW/moc_playback_engine.cpp:
 
 /usr/include/c++/15/bits/fs_dir.h:
 
+/usr/include/c++/15/bits/memory_resource.h:
+
+/usr/include/c++/15/bits/stl_function.h:
+
 /usr/include/nlohmann/detail/input/input_adapters.hpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qforeach.h:
@@ -1357,10 +1454,6 @@ src/playback/ve_playback_autogen/EWIEGA46WW/moc_playback_engine.cpp:
 /usr/include/c++/15/bits/std_function.h:
 
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
-
-/usr/include/nlohmann/byte_container_with_subtype.hpp:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerfwd.h:
 
 /usr/include/c++/15/concepts:
 
@@ -1382,7 +1475,7 @@ src/playback/ve_playback_autogen/EWIEGA46WW/moc_playback_engine.cpp:
 
 /usr/include/c++/15/bits/ranges_base.h:
 
-/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h:
 
 /usr/include/c++/15/vector:
 
@@ -1408,6 +1501,8 @@ src/playback/ve_playback_autogen/EWIEGA46WW/moc_playback_engine.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qspan.h:
+
 /usr/include/c++/15/ext/type_traits.h:
 
 /usr/include/c++/15/bits/functional_hash.h:
@@ -1415,6 +1510,10 @@ src/playback/ve_playback_autogen/EWIEGA46WW/moc_playback_engine.cpp:
 /usr/include/c++/15/bits/uses_allocator_args.h:
 
 /usr/include/c++/15/bits/chrono.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h:
+
+/usr/include/c++/15/bits/stl_set.h:
 
 /usr/include/c++/15/bits/atomic_base.h:
 
@@ -1436,10 +1535,6 @@ src/playback/ve_playback_autogen/EWIEGA46WW/moc_playback_engine.cpp:
 
 /usr/include/c++/15/bits/valarray_after.h:
 
-/usr/include/c++/15/valarray:
-
-/usr/include/asm-generic/errno.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
 /usr/include/c++/15/bits/shared_ptr_base.h:
@@ -1453,6 +1548,10 @@ src/playback/ve_playback_autogen/EWIEGA46WW/moc_playback_engine.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qfunctionaltools_impl.h:
 
 /usr/include/c++/15/bits/locale_facets.h:
+
+/usr/include/x86_64-linux-gnu/sys/syscall.h:
+
+/usr/include/c++/15/bits/align.h:
 
 /usr/include/c++/15/bits/version.h:
 
@@ -1477,6 +1576,8 @@ src/playback/ve_playback_autogen/EWIEGA46WW/moc_playback_engine.cpp:
 /usr/include/c++/15/bits/basic_string.h:
 
 /usr/include/c++/15/bits/cpp_type_traits.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qcontiguouscache.h:
 
 /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/core/sequence.h:
 
@@ -1508,6 +1609,14 @@ src/playback/ve_playback_autogen/EWIEGA46WW/moc_playback_engine.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qttranslation.h:
+
+/usr/include/c++/15/numbers:
+
+/usr/include/c++/15/backward/binders.h:
+
+/usr/include/c++/15/exception:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtcore-config.h:
 
 /usr/include/c++/15/bits/unicode-data.h:
@@ -1526,10 +1635,6 @@ src/playback/ve_playback_autogen/EWIEGA46WW/moc_playback_engine.cpp:
 
 /usr/include/c++/15/bits/ostream.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/QString:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearraylist.h:
-
 /usr/include/c++/15/bits/nested_exception.h:
 
 /usr/include/c++/15/bits/memoryfwd.h:
@@ -1540,13 +1645,15 @@ src/playback/ve_playback_autogen/EWIEGA46WW/moc_playback_engine.cpp:
 
 /usr/include/c++/15/bits/ios_base.h:
 
+/usr/include/nlohmann/detail/conversions/from_json.hpp:
+
 /usr/include/c++/15/climits:
 
 /usr/include/c++/15/bits/vector.tcc:
 
 /usr/include/c++/15/bits/unicode.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qtypes.h:
+/usr/include/c++/15/bits/stl_multiset.h:
 
 /usr/include/locale.h:
 
@@ -1580,10 +1687,6 @@ src/playback/ve_playback_autogen/EWIEGA46WW/moc_playback_engine.cpp:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/time_members.h:
 
-/usr/include/c++/15/filesystem:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h:
-
 /usr/include/c++/15/bits/locale_classes.tcc:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h:
@@ -1592,25 +1695,19 @@ src/playback/ve_playback_autogen/EWIEGA46WW/moc_playback_engine.cpp:
 
 /usr/include/c++/15/bits/locale_conv.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qbuffer.h:
+
 /usr/include/c++/15/bits/localefwd.h:
 
 /usr/include/c++/15/typeinfo:
 
 /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/core/asset.h:
 
-/usr/include/nlohmann/detail/abi_macros.hpp:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qstringmatcher.h:
-
 /usr/include/c++/15/bits/mask_array.h:
 
 /usr/include/c++/15/bits/max_size_type.h:
 
 /usr/include/c++/15/bits/atomic_lockfree_defines.h:
-
-/usr/include/c++/15/bits/stl_function.h:
-
-/usr/include/c++/15/bits/memory_resource.h:
 
 /usr/include/c++/15/bits/monostate.h:
 
@@ -1642,6 +1739,8 @@ src/playback/ve_playback_autogen/EWIEGA46WW/moc_playback_engine.cpp:
 
 /usr/include/x86_64-linux-gnu/asm/unistd_64.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h:
+
 /usr/include/c++/15/bits/parse_numbers.h:
 
 /usr/include/c++/15/bits/stl_relops.h:
@@ -1662,7 +1761,15 @@ src/playback/ve_playback_autogen/EWIEGA46WW/moc_playback_engine.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
+/usr/include/c++/15/bits/char_traits.h:
+
+/usr/include/c++/15/cctype:
+
+/usr/include/c++/15/bits/ranges_uninitialized.h:
+
 /usr/include/c++/15/type_traits:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h:
 
 /usr/include/c++/15/bits/exception.h:
 
@@ -1686,8 +1793,6 @@ src/playback/ve_playback_autogen/EWIEGA46WW/moc_playback_engine.cpp:
 
 /usr/include/c++/15/ext/atomicity.h:
 
-/usr/include/c++/15/bits/stl_iterator_base_funcs.h:
-
 /usr/include/c++/15/bits/algorithmfwd.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
@@ -1698,11 +1803,19 @@ src/playback/ve_playback_autogen/EWIEGA46WW/moc_playback_engine.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h:
 
-/usr/include/c++/15/bits/char_traits.h:
+/usr/include/c++/15/bits/locale_classes.h:
 
-/usr/include/c++/15/cctype:
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
-/usr/include/c++/15/bits/ranges_uninitialized.h:
+/usr/include/nlohmann/byte_container_with_subtype.hpp:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerfwd.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qstringmatcher.h:
+
+/usr/include/nlohmann/detail/abi_macros.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
 /usr/include/nlohmann/detail/conversions/to_json.hpp:
 
@@ -1752,7 +1865,11 @@ src/playback/ve_playback_autogen/EWIEGA46WW/moc_playback_engine.cpp:
 
 /usr/include/nlohmann/detail/meta/call_std/begin.hpp:
 
-/usr/include/nlohmann/detail/meta/cpp_future.hpp:
+/usr/include/c++/15/valarray:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h:
 
 /usr/include/nlohmann/detail/meta/identity_tag.hpp:
 
@@ -1797,10 +1914,6 @@ src/playback/ve_playback_autogen/EWIEGA46WW/moc_playback_engine.cpp:
 /usr/include/sched.h:
 
 /usr/include/wctype.h:
-
-/usr/include/c++/15/bits/charconv.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h:
 
 /usr/include/c++/15/tr1/ell_integral.tcc:
 
@@ -1964,6 +2077,8 @@ src/playback/ve_playback_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug:
+
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
@@ -1979,10 +2094,6 @@ src/playback/ve_playback_autogen/mocs_compilation.cpp:
 /usr/include/c++/15/cstdio:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
-
-/usr/include/c++/15/bits/atomic_wait.h:
-
-/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
 /usr/include/c++/15/bits/alloc_traits.h:
 
@@ -2008,11 +2119,15 @@ src/playback/ve_playback_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
+/usr/include/c++/15/bits/atomic_wait.h:
+
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QBuffer:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QElapsedTimer:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap:
-
-/usr/include/x86_64-linux-gnu/sys/types.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject:
 
@@ -2046,6 +2161,8 @@ src/playback/ve_playback_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qatomic_cxx11.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtaudio.h:
+
 /usr/include/c++/15/utility:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h:
@@ -2070,6 +2187,10 @@ src/playback/ve_playback_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompilerdetection.h:
 
+/usr/include/c++/15/bits/fs_fwd.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer_impl.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerinfo.h:
 
 /usr/include/c++/15/variant:
@@ -2092,6 +2213,10 @@ src/playback/ve_playback_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterable.h:
 
 /usr/include/nlohmann/detail/input/json_sax.hpp:
@@ -2110,9 +2235,9 @@ src/playback/ve_playback_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qnumeric.h:
 
-/usr/include/nlohmann/adl_serializer.hpp:
-
 /usr/include/c++/15/bits/stl_uninitialized.h:
+
+/usr/include/nlohmann/adl_serializer.hpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h:
 
@@ -2130,9 +2255,15 @@ src/playback/ve_playback_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qalloc.h:
+
 /usr/include/nlohmann/detail/input/position_t.hpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata_impl.h:
+
+/usr/include/nlohmann/detail/meta/cpp_future.hpp:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
@@ -2160,6 +2291,10 @@ src/playback/ve_playback_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtcoreexports.h:
 
+/usr/include/c++/15/bits/stl_iterator_base_funcs.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h:
+
 /usr/include/c++/15/bits/unordered_map.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtformat_impl.h:
@@ -2167,21 +2302,3 @@ src/playback/ve_playback_autogen/mocs_compilation.cpp:
 /usr/include/nlohmann/thirdparty/hedley/hedley.hpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qtresource.h:
-
-/usr/include/c++/15/numbers:
-
-/usr/include/c++/15/backward/binders.h:
-
-/usr/include/c++/15/exception:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qttranslation.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qutf8stringview.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h:
-
-/usr/include/c++/15/bits/align.h:
-
-/usr/include/x86_64-linux-gnu/sys/syscall.h:

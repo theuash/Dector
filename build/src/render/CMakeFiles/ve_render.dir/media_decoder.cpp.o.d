@@ -412,12 +412,18 @@ src/render/CMakeFiles/ve_render.dir/media_decoder.cpp.o: \
  /usr/include/c++/15/cassert \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qline.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/QAudioFormat \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudioformat.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimediaglobal.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimedia-config.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimediaexports.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontiguouscache.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer_impl.h \
  /usr/include/c++/15/set /usr/include/c++/15/bits/stl_set.h \
  /usr/include/c++/15/bits/stl_multiset.h \
@@ -429,14 +435,6 @@ src/render/CMakeFiles/ve_render.dir/media_decoder.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qalloc.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QFile \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qfile.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qfiledevice.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
- /usr/include/c++/15/filesystem /usr/include/c++/15/bits/fs_fwd.h \
- /usr/include/c++/15/bits/fs_path.h /usr/include/c++/15/codecvt \
- /usr/include/c++/15/bits/fs_dir.h /usr/include/c++/15/bits/fs_ops.h \
  /usr/include/x86_64-linux-gnu/libavcodec/avcodec.h \
  /usr/include/x86_64-linux-gnu/libavutil/samplefmt.h \
  /usr/include/x86_64-linux-gnu/libavutil/attributes.h \
@@ -490,6 +488,11 @@ src/render/CMakeFiles/ve_render.dir/media_decoder.cpp.o: \
  /usr/include/x86_64-linux-gnu/libavcodec/codec.h \
  /usr/include/x86_64-linux-gnu/libavutil/imgutils.h \
  /usr/include/x86_64-linux-gnu/libavutil/pixdesc.h \
+ /usr/include/x86_64-linux-gnu/libavutil/opt.h \
  /usr/include/x86_64-linux-gnu/libswscale/swscale.h \
  /usr/include/x86_64-linux-gnu/libswscale/version_major.h \
- /usr/include/x86_64-linux-gnu/libswscale/version.h
+ /usr/include/x86_64-linux-gnu/libswscale/version.h \
+ /usr/include/x86_64-linux-gnu/libswresample/swresample.h \
+ /usr/include/x86_64-linux-gnu/libswresample/version_major.h \
+ /usr/include/x86_64-linux-gnu/libswresample/version.h \
+ /usr/include/x86_64-linux-gnu/libswresample/version_major.h

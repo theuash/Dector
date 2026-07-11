@@ -10,10 +10,11 @@ ve: \
   core/libve_core.a \
   /usr/lib/x86_64-linux-gnu/libQt6Multimedia.so.6.10.2 \
   /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.10.2 \
-  /usr/lib/x86_64-linux-gnu/libavcodec.so \
-  /usr/lib/x86_64-linux-gnu/libavformat.so \
-  /usr/lib/x86_64-linux-gnu/libavutil.so \
-  /usr/lib/x86_64-linux-gnu/libswscale.so \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libavcodec.so \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libavformat.so \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libavutil.so \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libswscale.so \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libswresample.so \
   /usr/lib/x86_64-linux-gnu/libQt6OpenGLWidgets.so.6.10.2 \
   /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.10.2 \
   /usr/lib/x86_64-linux-gnu/libQt6OpenGL.so.6.10.2 \
@@ -47,7 +48,10 @@ ve: \
   /usr/lib/gcc/x86_64-linux-gnu/15/libgcc.a \
   /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o \
-  /usr/lib/x86_64-linux-gnu/libswresample.so.6 \
+  /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.10.2 \
+  /usr/lib/x86_64-linux-gnu/libQt6DBus.so.6 \
+  /usr/lib/x86_64-linux-gnu/libpulse.so.0 \
+  /lib64/ld-linux-x86-64.so.2 \
   /usr/lib/x86_64-linux-gnu/libvpx.so.12 \
   /usr/lib/x86_64-linux-gnu/libwebpmux.so.3 \
   /usr/lib/x86_64-linux-gnu/liblzma.so.5 \
@@ -86,7 +90,6 @@ ve: \
   /usr/lib/x86_64-linux-gnu/libxvidcore.so.4 \
   /usr/lib/x86_64-linux-gnu/libva.so.2 \
   /usr/lib/x86_64-linux-gnu/libvpl.so.2 \
-  /lib64/ld-linux-x86-64.so.2 \
   /usr/lib/x86_64-linux-gnu/libxml2.so.16 \
   /usr/lib/x86_64-linux-gnu/libbz2.so.1.0 \
   /usr/lib/x86_64-linux-gnu/libdvdnav.so.4 \
@@ -107,10 +110,10 @@ ve: \
   /usr/lib/x86_64-linux-gnu/libX11.so.6 \
   /usr/lib/x86_64-linux-gnu/libdrm.so.2 \
   /usr/lib/x86_64-linux-gnu/libOpenCL.so.1 \
+  /usr/lib/x86_64-linux-gnu/libsoxr.so.0 \
   /usr/lib/x86_64-linux-gnu/libQt6OpenGL.so.6.10.2 \
   /usr/lib/x86_64-linux-gnu/libEGL.so.1 \
   /usr/lib/x86_64-linux-gnu/libfontconfig.so.1 \
-  /usr/lib/x86_64-linux-gnu/libQt6DBus.so.6 \
   /usr/lib/x86_64-linux-gnu/libxkbcommon.so.0 \
   /usr/lib/x86_64-linux-gnu/libGLX.so \
   /usr/lib/x86_64-linux-gnu/libOpenGL.so \
@@ -124,7 +127,14 @@ ve: \
   /usr/lib/x86_64-linux-gnu/libb2.so.1 \
   /usr/lib/x86_64-linux-gnu/libpcre2-16.so.0 \
   /usr/lib/x86_64-linux-gnu/libzstd.so.1 \
-  /usr/lib/x86_64-linux-gnu/libsoxr.so.0 \
+  /usr/lib/x86_64-linux-gnu/libgssapi_krb5.so.2 \
+  /usr/lib/x86_64-linux-gnu/libbrotlidec.so.1 \
+  /usr/lib/x86_64-linux-gnu/libproxy.so.1 \
+  /lib/x86_64-linux-gnu/libproxy.so.1 \
+  /usr/lib/x86_64-linux-gnu/libproxy.so.1 \
+  /usr/lib/x86_64-linux-gnu/libproxy.so.1 \
+  /usr/lib/x86_64-linux-gnu/libdbus-1.so.3 \
+  /usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-17.0.so \
   /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0 \
   /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0 \
   /usr/lib/x86_64-linux-gnu/libcairo-gobject.so.2 \
@@ -144,7 +154,6 @@ ve: \
   /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0 \
   /usr/lib/x86_64-linux-gnu/libjxl_cms.so.0.11 \
   /usr/lib/x86_64-linux-gnu/libhwy.so.1 \
-  /usr/lib/x86_64-linux-gnu/libbrotlidec.so.1 \
   /usr/lib/x86_64-linux-gnu/libbrotlienc.so.1 \
   /usr/lib/x86_64-linux-gnu/libmpg123.so.0 \
   /usr/lib/x86_64-linux-gnu/libogg.so.0 \
@@ -164,7 +173,6 @@ ve: \
   /usr/lib/x86_64-linux-gnu/libcrypto.so.3 \
   /usr/lib/x86_64-linux-gnu/libmbedcrypto.so.16 \
   /usr/lib/x86_64-linux-gnu/libcjson.so.1 \
-  /usr/lib/x86_64-linux-gnu/libgssapi_krb5.so.2 \
   /usr/lib/x86_64-linux-gnu/libbsd.so.0 \
   /usr/lib/x86_64-linux-gnu/libsodium.so.23 \
   /usr/lib/x86_64-linux-gnu/libpgm-5.3.so.0 \
@@ -172,12 +180,21 @@ ve: \
   /usr/lib/x86_64-linux-gnu/libXfixes.so.3 \
   /usr/lib/x86_64-linux-gnu/libX11-xcb.so.1 \
   /usr/lib/x86_64-linux-gnu/libxcb-dri3.so.0 \
+  /usr/lib/x86_64-linux-gnu/libgomp.so.1 \
   /usr/lib/x86_64-linux-gnu/libGLdispatch.so.0 \
   /usr/lib/x86_64-linux-gnu/libexpat.so.1 \
-  /usr/lib/x86_64-linux-gnu/libdbus-1.so.3 \
   /usr/lib/x86_64-linux-gnu/libgraphite2.so.3 \
   /usr/lib/x86_64-linux-gnu/libicudata.so.78 \
-  /usr/lib/x86_64-linux-gnu/libgomp.so.1 \
+  /usr/lib/x86_64-linux-gnu/libkrb5.so.3 \
+  /usr/lib/x86_64-linux-gnu/libk5crypto.so.3 \
+  /usr/lib/x86_64-linux-gnu/libcom_err.so.2 \
+  /usr/lib/x86_64-linux-gnu/libkrb5support.so.0 \
+  /usr/lib/x86_64-linux-gnu/libbrotlicommon.so.1 \
+  /usr/lib/x86_64-linux-gnu/libproxy/libpxbackend-1.0.so \
+  /usr/lib/x86_64-linux-gnu/libsystemd.so.0 \
+  /usr/lib/x86_64-linux-gnu/libsndfile.so.1 \
+  /usr/lib/x86_64-linux-gnu/libasyncns.so.0 \
+  /usr/lib/x86_64-linux-gnu/libapparmor.so.1 \
   /usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0 \
   /usr/lib/x86_64-linux-gnu/libmount.so.1 \
   /usr/lib/x86_64-linux-gnu/libselinux.so.1 \
@@ -188,18 +205,22 @@ ve: \
   /usr/lib/x86_64-linux-gnu/libXau.so.6 \
   /usr/lib/x86_64-linux-gnu/libXdmcp.so.6 \
   /usr/lib/x86_64-linux-gnu/liblcms2.so.2 \
-  /usr/lib/x86_64-linux-gnu/libbrotlicommon.so.1 \
-  /usr/lib/x86_64-linux-gnu/libkrb5.so.3 \
-  /usr/lib/x86_64-linux-gnu/libk5crypto.so.3 \
-  /usr/lib/x86_64-linux-gnu/libcom_err.so.2 \
-  /usr/lib/x86_64-linux-gnu/libkrb5support.so.0 \
   /usr/lib/x86_64-linux-gnu/libmd.so.0 \
-  /usr/lib/x86_64-linux-gnu/libsystemd.so.0 \
+  /usr/lib/x86_64-linux-gnu/libkeyutils.so.1 \
+  /usr/lib/x86_64-linux-gnu/libresolv.so.2 \
+  /usr/lib/x86_64-linux-gnu/libcurl-gnutls.so.4 \
+  /usr/lib/x86_64-linux-gnu/libduktape.so.207 \
+  /usr/lib/x86_64-linux-gnu/libFLAC.so.14 \
   /usr/lib/x86_64-linux-gnu/libblkid.so.1 \
   /usr/lib/x86_64-linux-gnu/libseccomp.so.2 \
   /usr/lib/x86_64-linux-gnu/libdatrie.so.1 \
-  /usr/lib/x86_64-linux-gnu/libkeyutils.so.1 \
-  /usr/lib/x86_64-linux-gnu/libresolv.so.2
+  /usr/lib/x86_64-linux-gnu/libnghttp2.so.14 \
+  /usr/lib/x86_64-linux-gnu/librtmp.so.1 \
+  /usr/lib/x86_64-linux-gnu/libldap.so.2 \
+  /usr/lib/x86_64-linux-gnu/liblber.so.2 \
+  /usr/lib/x86_64-linux-gnu/libssh2.so.1 \
+  /usr/lib/x86_64-linux-gnu/libpsl.so.5 \
+  /usr/lib/x86_64-linux-gnu/libsasl2.so.2
 
 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o:
 
@@ -223,13 +244,15 @@ core/libve_core.a:
 
 /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.10.2:
 
-/usr/lib/x86_64-linux-gnu/libavcodec.so:
+/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libavcodec.so:
 
-/usr/lib/x86_64-linux-gnu/libavformat.so:
+/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libavformat.so:
 
-/usr/lib/x86_64-linux-gnu/libavutil.so:
+/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libavutil.so:
 
-/usr/lib/x86_64-linux-gnu/libswscale.so:
+/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libswscale.so:
+
+/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libswresample.so:
 
 /usr/lib/x86_64-linux-gnu/libQt6OpenGLWidgets.so.6.10.2:
 
@@ -297,7 +320,13 @@ core/libve_core.a:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o:
 
-/usr/lib/x86_64-linux-gnu/libswresample.so.6:
+/usr/lib/x86_64-linux-gnu/libQt6Network.so.6.10.2:
+
+/usr/lib/x86_64-linux-gnu/libQt6DBus.so.6:
+
+/usr/lib/x86_64-linux-gnu/libpulse.so.0:
+
+/lib64/ld-linux-x86-64.so.2:
 
 /usr/lib/x86_64-linux-gnu/libvpx.so.12:
 
@@ -375,8 +404,6 @@ core/libve_core.a:
 
 /usr/lib/x86_64-linux-gnu/libvpl.so.2:
 
-/lib64/ld-linux-x86-64.so.2:
-
 /usr/lib/x86_64-linux-gnu/libxml2.so.16:
 
 /usr/lib/x86_64-linux-gnu/libbz2.so.1.0:
@@ -417,13 +444,13 @@ core/libve_core.a:
 
 /usr/lib/x86_64-linux-gnu/libOpenCL.so.1:
 
+/usr/lib/x86_64-linux-gnu/libsoxr.so.0:
+
 /usr/lib/x86_64-linux-gnu/libQt6OpenGL.so.6.10.2:
 
 /usr/lib/x86_64-linux-gnu/libEGL.so.1:
 
 /usr/lib/x86_64-linux-gnu/libfontconfig.so.1:
-
-/usr/lib/x86_64-linux-gnu/libQt6DBus.so.6:
 
 /usr/lib/x86_64-linux-gnu/libxkbcommon.so.0:
 
@@ -451,7 +478,21 @@ core/libve_core.a:
 
 /usr/lib/x86_64-linux-gnu/libzstd.so.1:
 
-/usr/lib/x86_64-linux-gnu/libsoxr.so.0:
+/usr/lib/x86_64-linux-gnu/libgssapi_krb5.so.2:
+
+/usr/lib/x86_64-linux-gnu/libbrotlidec.so.1:
+
+/usr/lib/x86_64-linux-gnu/libproxy.so.1:
+
+/lib/x86_64-linux-gnu/libproxy.so.1:
+
+/usr/lib/x86_64-linux-gnu/libproxy.so.1:
+
+/usr/lib/x86_64-linux-gnu/libproxy.so.1:
+
+/usr/lib/x86_64-linux-gnu/libdbus-1.so.3:
+
+/usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-17.0.so:
 
 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0:
 
@@ -491,8 +532,6 @@ core/libve_core.a:
 
 /usr/lib/x86_64-linux-gnu/libhwy.so.1:
 
-/usr/lib/x86_64-linux-gnu/libbrotlidec.so.1:
-
 /usr/lib/x86_64-linux-gnu/libbrotlienc.so.1:
 
 /usr/lib/x86_64-linux-gnu/libmpg123.so.0:
@@ -531,8 +570,6 @@ core/libve_core.a:
 
 /usr/lib/x86_64-linux-gnu/libcjson.so.1:
 
-/usr/lib/x86_64-linux-gnu/libgssapi_krb5.so.2:
-
 /usr/lib/x86_64-linux-gnu/libbsd.so.0:
 
 /usr/lib/x86_64-linux-gnu/libsodium.so.23:
@@ -547,17 +584,35 @@ core/libve_core.a:
 
 /usr/lib/x86_64-linux-gnu/libxcb-dri3.so.0:
 
+/usr/lib/x86_64-linux-gnu/libgomp.so.1:
+
 /usr/lib/x86_64-linux-gnu/libGLdispatch.so.0:
 
 /usr/lib/x86_64-linux-gnu/libexpat.so.1:
-
-/usr/lib/x86_64-linux-gnu/libdbus-1.so.3:
 
 /usr/lib/x86_64-linux-gnu/libgraphite2.so.3:
 
 /usr/lib/x86_64-linux-gnu/libicudata.so.78:
 
-/usr/lib/x86_64-linux-gnu/libgomp.so.1:
+/usr/lib/x86_64-linux-gnu/libkrb5.so.3:
+
+/usr/lib/x86_64-linux-gnu/libk5crypto.so.3:
+
+/usr/lib/x86_64-linux-gnu/libcom_err.so.2:
+
+/usr/lib/x86_64-linux-gnu/libkrb5support.so.0:
+
+/usr/lib/x86_64-linux-gnu/libbrotlicommon.so.1:
+
+/usr/lib/x86_64-linux-gnu/libproxy/libpxbackend-1.0.so:
+
+/usr/lib/x86_64-linux-gnu/libsystemd.so.0:
+
+/usr/lib/x86_64-linux-gnu/libsndfile.so.1:
+
+/usr/lib/x86_64-linux-gnu/libasyncns.so.0:
+
+/usr/lib/x86_64-linux-gnu/libapparmor.so.1:
 
 /usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0:
 
@@ -579,19 +634,17 @@ core/libve_core.a:
 
 /usr/lib/x86_64-linux-gnu/liblcms2.so.2:
 
-/usr/lib/x86_64-linux-gnu/libbrotlicommon.so.1:
-
-/usr/lib/x86_64-linux-gnu/libkrb5.so.3:
-
-/usr/lib/x86_64-linux-gnu/libk5crypto.so.3:
-
-/usr/lib/x86_64-linux-gnu/libcom_err.so.2:
-
-/usr/lib/x86_64-linux-gnu/libkrb5support.so.0:
-
 /usr/lib/x86_64-linux-gnu/libmd.so.0:
 
-/usr/lib/x86_64-linux-gnu/libsystemd.so.0:
+/usr/lib/x86_64-linux-gnu/libkeyutils.so.1:
+
+/usr/lib/x86_64-linux-gnu/libresolv.so.2:
+
+/usr/lib/x86_64-linux-gnu/libcurl-gnutls.so.4:
+
+/usr/lib/x86_64-linux-gnu/libduktape.so.207:
+
+/usr/lib/x86_64-linux-gnu/libFLAC.so.14:
 
 /usr/lib/x86_64-linux-gnu/libblkid.so.1:
 
@@ -599,6 +652,16 @@ core/libve_core.a:
 
 /usr/lib/x86_64-linux-gnu/libdatrie.so.1:
 
-/usr/lib/x86_64-linux-gnu/libkeyutils.so.1:
+/usr/lib/x86_64-linux-gnu/libnghttp2.so.14:
 
-/usr/lib/x86_64-linux-gnu/libresolv.so.2:
+/usr/lib/x86_64-linux-gnu/librtmp.so.1:
+
+/usr/lib/x86_64-linux-gnu/libldap.so.2:
+
+/usr/lib/x86_64-linux-gnu/liblber.so.2:
+
+/usr/lib/x86_64-linux-gnu/libssh2.so.1:
+
+/usr/lib/x86_64-linux-gnu/libpsl.so.5:
+
+/usr/lib/x86_64-linux-gnu/libsasl2.so.2:

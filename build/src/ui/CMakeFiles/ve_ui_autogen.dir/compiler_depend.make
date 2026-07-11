@@ -580,9 +580,15 @@ src/ui/ve_ui_autogen/timestamp: src/ui/ve_ui_autogen/moc_predefs.h \
   /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/qopenglwidget.h \
   /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/qtopenglwidgetsexports.h \
   /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/qtopenglwidgetsglobal.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QButtonGroup \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QComboBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDoubleSpinBox \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFormLayout \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFrame \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGroupBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLayout \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QListWidget \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
@@ -595,9 +601,17 @@ src/ui/ve_ui_autogen/timestamp: src/ui/ve_ui_autogen/moc_predefs.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qbuttongroup.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcombobox.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qformlayout.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgroupbox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistview.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistwidget.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
@@ -657,11 +671,21 @@ src/ui/ve_ui_autogen/timestamp: src/ui/ve_ui_autogen/moc_predefs.h \
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistview.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgroupbox.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcombobox.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h:
 
@@ -677,7 +701,13 @@ src/ui/ve_ui_autogen/timestamp: src/ui/ve_ui_autogen/moc_predefs.h \
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QListWidget:
 
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLayout:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFrame:
+
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QComboBox:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox:
 
 /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/qtopenglwidgetsglobal.h:
 
@@ -706,6 +736,8 @@ src/ui/ve_ui_autogen/timestamp: src/ui/ve_ui_autogen/moc_predefs.h \
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QButtonGroup:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h:
 
@@ -835,6 +867,8 @@ src/ui/ve_ui_autogen/timestamp: src/ui/ve_ui_autogen/moc_predefs.h \
 
 /usr/include/c++/15/bits/hashtable_policy.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qformlayout.h:
+
 /usr/include/c++/15/bits/exception_ptr.h:
 
 /usr/include/c++/15/bits/gslice.h:
@@ -894,6 +928,8 @@ src/ui/ve_ui_autogen/moc_predefs.h:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtversion.h:
 
 /usr/include/c++/15/cassert:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFormLayout:
 
 /usr/include/c++/15/bits/streambuf.tcc:
 
@@ -1201,6 +1237,8 @@ src/ui/ve_ui_autogen/moc_predefs.h:
 
 /usr/include/c++/15/ext/numeric_traits.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qbuttongroup.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qregion.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qline.h:
@@ -1278,6 +1316,8 @@ src/ui/ve_ui_autogen/moc_predefs.h:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtconfiginclude.h:
 
 /usr/include/c++/15/bits/locale_facets_nonio.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGroupBox:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/atomic_word.h:
 
@@ -1452,6 +1492,8 @@ src/ui/ve_ui_autogen/moc_predefs.h:
 /usr/include/nlohmann/detail/output/binary_writer.hpp:
 
 /usr/include/nlohmann/detail/output/serializer.hpp:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h:
 
 /usr/include/nlohmann/detail/string_escape.hpp:
 

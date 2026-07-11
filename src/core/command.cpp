@@ -3,6 +3,9 @@
 
 CommandStack::CommandStack(QObject* parent) : QObject(parent) {}
 
+AddAssetCommand::AddAssetCommand(Project* project, const QString& path)
+    : Command("Import Media"), m_project(project), m_path(path) {}
+
 void CommandStack::push(std::unique_ptr<Command> cmd) {
     cmd->execute();
     m_undoStack.push_back(std::move(cmd));
@@ -47,14 +50,11 @@ QString CommandStack::redoText() const {
 
 #include "project.h"
 
-AddAssetCommand::AddAssetCommand(Project* project, const QString& path)
-    : Command("Import Media"), m_project(project), m_path(path) {}
-
 void AddAssetCommand::execute() {
     auto asset = std::make_unique<Asset>();
     asset->path = m_path;
     asset->name = m_path.section('/', -1);
-    asset->duration = RationalTime(300, 30);
+    asset->duration = RationalTime(300, 30); // placeholder, updated by MainWindow
     m_assetId = asset->id;
     m_project->addAsset(std::move(asset));
 }

@@ -127,10 +127,12 @@ src/playback/CMakeFiles/ve_playback.dir/playback_engine.cpp.o
  /usr/include/c++/15/bits/stl_list.h
  /usr/include/c++/15/bits/stl_map.h
  /usr/include/c++/15/bits/stl_multimap.h
+ /usr/include/c++/15/bits/stl_multiset.h
  /usr/include/c++/15/bits/stl_numeric.h
  /usr/include/c++/15/bits/stl_pair.h
  /usr/include/c++/15/bits/stl_raw_storage_iter.h
  /usr/include/c++/15/bits/stl_relops.h
+ /usr/include/c++/15/bits/stl_set.h
  /usr/include/c++/15/bits/stl_tempbuf.h
  /usr/include/c++/15/bits/stl_tree.h
  /usr/include/c++/15/bits/stl_uninitialized.h
@@ -145,6 +147,7 @@ src/playback/CMakeFiles/ve_playback.dir/playback_engine.cpp.o
  /usr/include/c++/15/bits/uniform_int_dist.h
  /usr/include/c++/15/bits/unique_ptr.h
  /usr/include/c++/15/bits/unordered_map.h
+ /usr/include/c++/15/bits/unordered_set.h
  /usr/include/c++/15/bits/uses_allocator.h
  /usr/include/c++/15/bits/uses_allocator_args.h
  /usr/include/c++/15/bits/utility.h
@@ -210,6 +213,7 @@ src/playback/CMakeFiles/ve_playback.dir/playback_engine.cpp.o
  /usr/include/c++/15/pstl/pstl_config.h
  /usr/include/c++/15/ranges
  /usr/include/c++/15/ratio
+ /usr/include/c++/15/set
  /usr/include/c++/15/span
  /usr/include/c++/15/sstream
  /usr/include/c++/15/stdexcept
@@ -234,6 +238,7 @@ src/playback/CMakeFiles/ve_playback.dir/playback_engine.cpp.o
  /usr/include/c++/15/type_traits
  /usr/include/c++/15/typeinfo
  /usr/include/c++/15/unordered_map
+ /usr/include/c++/15/unordered_set
  /usr/include/c++/15/utility
  /usr/include/c++/15/valarray
  /usr/include/c++/15/variant
@@ -418,6 +423,8 @@ src/playback/CMakeFiles/ve_playback.dir/playback_engine.cpp.o
  /usr/include/x86_64-linux-gnu/c++/15/bits/time_members.h
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
  /usr/include/x86_64-linux-gnu/gnu/stubs.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QBuffer
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QElapsedTimer
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject
@@ -426,11 +433,13 @@ src/playback/CMakeFiles/ve_playback.dir/playback_engine.cpp.o
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QUuid
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q20memory.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q20type_traits.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q23type_traits.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstracteventdispatcher.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qalloc.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qanystringview.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydata.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydataops.h
@@ -441,6 +450,7 @@ src/playback/CMakeFiles/ve_playback.dir/playback_engine.cpp.o
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasicatomic.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbuffer.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayalgorithms.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearraylist.h
@@ -455,10 +465,12 @@ src/playback/CMakeFiles/ve_playback.dir/playback_engine.cpp.o
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerfwd.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerinfo.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainertools_impl.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontiguouscache.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdarwinhelpers.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdeadlinetimer.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qelapsedtimer.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qendian.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h
@@ -471,7 +483,9 @@ src/playback/CMakeFiles/ve_playback.dir/playback_engine.cpp.o
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qgenericatomic.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobalstatic.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevicebase.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterable.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterator.h
@@ -496,8 +510,12 @@ src/playback/CMakeFiles/ve_playback.dir/playback_engine.cpp.o
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopedpointer.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopeguard.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata_impl.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer_impl.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qspan.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstdlibdetection.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringalgorithms.h
@@ -522,6 +540,7 @@ src/playback/CMakeFiles/ve_playback.dir/playback_engine.cpp.o
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtdeprecationdefinitions.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtdeprecationmarkers.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtenvironmentvariables.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtformat_impl.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtnoop.h
@@ -535,9 +554,23 @@ src/playback/CMakeFiles/ve_playback.dir/playback_engine.cpp.o
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtypes.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qutf8stringview.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/quuid.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/QAudioFormat
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/QAudioSink
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudio.h
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudiodevice.h
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudioformat.h
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudiosink.h
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtaudio.h
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimedia-config.h
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimediaexports.h
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimediaglobal.h
  /usr/include/x86_64-linux-gnu/sys/cdefs.h
  /usr/include/x86_64-linux-gnu/sys/select.h
  /usr/include/x86_64-linux-gnu/sys/single_threaded.h
@@ -962,11 +995,13 @@ src/playback/CMakeFiles/ve_playback.dir/ve_playback_autogen/mocs_compilation.cpp
  /usr/include/x86_64-linux-gnu/c++/15/bits/time_members.h
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
  /usr/include/x86_64-linux-gnu/gnu/stubs.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QBuffer
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QElapsedTimer
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q20algorithm.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q20memory.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q20type_traits.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q23type_traits.h
@@ -980,6 +1015,7 @@ src/playback/CMakeFiles/ve_playback.dir/ve_playback_autogen/mocs_compilation.cpp
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qatomic_cxx11.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasicatomic.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbuffer.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayalgorithms.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearraylist.h
@@ -1007,6 +1043,7 @@ src/playback/CMakeFiles/ve_playback.dir/ve_playback_autogen/mocs_compilation.cpp
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobalstatic.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevicebase.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterable.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterator.h
@@ -1030,6 +1067,8 @@ src/playback/CMakeFiles/ve_playback.dir/ve_playback_autogen/mocs_compilation.cpp
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopedpointer.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopeguard.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qspan.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstdlibdetection.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringalgorithms.h
@@ -1071,6 +1110,18 @@ src/playback/CMakeFiles/ve_playback.dir/ve_playback_autogen/mocs_compilation.cpp
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/QAudioSink
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudio.h
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudiodevice.h
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudioformat.h
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudiosink.h
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtaudio.h
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimedia-config.h
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimediaexports.h
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimediaglobal.h
  /usr/include/x86_64-linux-gnu/sys/cdefs.h
  /usr/include/x86_64-linux-gnu/sys/select.h
  /usr/include/x86_64-linux-gnu/sys/single_threaded.h

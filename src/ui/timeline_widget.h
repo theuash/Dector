@@ -4,6 +4,7 @@
 
 class Project;
 struct Clip;
+struct Track;
 
 enum class TimelineTool { Selection, Razor };
 
@@ -37,21 +38,24 @@ protected:
     QSize sizeHint() const override { return QSize(800, 200); }
 
 private:
-    void paintTrackHeader(QPainter& p, int index, const class Track& track);
+    void paintTrack(QPainter& p, int trackIndex, const Track& track, int scrollX);
+    void paintTrackHeader(QPainter& p, int index, const Track& track);
+    void paintClip(QPainter& p, const Clip& clip, int trackIndex, int x, int w, bool selected);
+    void paintWaveform(QPainter& p, const Clip& clip, int x, int y, int w, int h);
     void razorSplitAt(const QPoint& pos);
     int snapX(int x, int avoidX = -1) const;
     RationalTime snapTime(const RationalTime& t, const QString& skipClipId = {}) const;
 
-    struct TrackLayout { int y, h; };
     int trackY(int index) const { return 2 + index * (m_trackH + 2); }
     int trackIndexAt(int y) const;
     int labelWidth() const { return 120; }
     int trackHeight() const { return m_trackH; }
     int timeToX(const RationalTime& t) const;
     RationalTime xToTime(int x) const;
+    QColor clipColor(const Clip& clip) const;
 
     static constexpr int m_trackH = 36;
-    static constexpr int m_snapThreshold = 8; // pixels
+    static constexpr int m_snapThreshold = 8;
 
     Project* m_project = nullptr;
     TimelineTool m_tool = TimelineTool::Selection;

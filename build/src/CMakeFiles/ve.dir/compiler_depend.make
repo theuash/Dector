@@ -585,6 +585,8 @@ src/CMakeFiles/ve.dir/main.cpp.o: /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/ma
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QButtonGroup \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFrame \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
@@ -593,6 +595,7 @@ src/CMakeFiles/ve.dir/main.cpp.o: /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/ma
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qbuttongroup.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
@@ -621,19 +624,26 @@ src/CMakeFiles/ve.dir/ve_autogen/mocs_compilation.cpp.o: src/ve_autogen/mocs_com
   /usr/include/stdc-predef.h
 
 src/ve: /lib/x86_64-linux-gnu/libcairo-gobject.so.2 \
+  /lib/x86_64-linux-gnu/libproxy.so.1 \
   /lib64/ld-linux-x86-64.so.2 \
   /usr/lib/x86_64-linux-gnu/Scrt1.o \
   /usr/lib/x86_64-linux-gnu/crti.o \
   /usr/lib/x86_64-linux-gnu/crtn.o \
+  /usr/lib/x86_64-linux-gnu/libavcodec.so \
+  /usr/lib/x86_64-linux-gnu/libavformat.so \
+  /usr/lib/x86_64-linux-gnu/libavutil.so \
   /usr/lib/x86_64-linux-gnu/libc.so \
   /usr/lib/x86_64-linux-gnu/libgcc_s.so.1 \
   /usr/lib/x86_64-linux-gnu/libm.so \
+  /usr/lib/x86_64-linux-gnu/libswresample.so \
+  /usr/lib/x86_64-linux-gnu/libswscale.so \
   /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o \
   /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o \
   /usr/lib/gcc/x86_64-linux-gnu/15/libgcc.a \
   /usr/lib/gcc/x86_64-linux-gnu/15/libgcc_s.so \
   /usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so \
   /usr/lib/x86_64-linux-gnu/libEGL.so.1 \
+  /usr/lib/x86_64-linux-gnu/libFLAC.so.14 \
   /usr/lib/x86_64-linux-gnu/libGLX.so \
   /usr/lib/x86_64-linux-gnu/libGLdispatch.so.0 \
   /usr/lib/x86_64-linux-gnu/libOpenCL.so.1 \
@@ -655,11 +665,10 @@ src/ve: /lib/x86_64-linux-gnu/libcairo-gobject.so.2 \
   /usr/lib/x86_64-linux-gnu/libXfixes.so.3 \
   /usr/lib/x86_64-linux-gnu/libXrender.so.1 \
   /usr/lib/x86_64-linux-gnu/libaom.so.3 \
+  /usr/lib/x86_64-linux-gnu/libapparmor.so.1 \
   /usr/lib/x86_64-linux-gnu/libaribb24.so.0 \
+  /usr/lib/x86_64-linux-gnu/libasyncns.so.0 \
   /usr/lib/x86_64-linux-gnu/libatomic.so.1 \
-  /usr/lib/x86_64-linux-gnu/libavcodec.so \
-  /usr/lib/x86_64-linux-gnu/libavformat.so \
-  /usr/lib/x86_64-linux-gnu/libavutil.so \
   /usr/lib/x86_64-linux-gnu/libb2.so.1 \
   /usr/lib/x86_64-linux-gnu/libblkid.so.1 \
   /usr/lib/x86_64-linux-gnu/libbluray.so.3 \
@@ -677,11 +686,13 @@ src/ve: /lib/x86_64-linux-gnu/libcairo-gobject.so.2 \
   /usr/lib/x86_64-linux-gnu/libcodec2.so.1.2 \
   /usr/lib/x86_64-linux-gnu/libcom_err.so.2 \
   /usr/lib/x86_64-linux-gnu/libcrypto.so.3 \
+  /usr/lib/x86_64-linux-gnu/libcurl-gnutls.so.4 \
   /usr/lib/x86_64-linux-gnu/libdatrie.so.1 \
   /usr/lib/x86_64-linux-gnu/libdav1d.so.7 \
   /usr/lib/x86_64-linux-gnu/libdbus-1.so.3 \
   /usr/lib/x86_64-linux-gnu/libdouble-conversion.so.3 \
   /usr/lib/x86_64-linux-gnu/libdrm.so.2 \
+  /usr/lib/x86_64-linux-gnu/libduktape.so.207 \
   /usr/lib/x86_64-linux-gnu/libdvdnav.so.4 \
   /usr/lib/x86_64-linux-gnu/libdvdread.so.8 \
   /usr/lib/x86_64-linux-gnu/libexpat.so.1 \
@@ -716,7 +727,9 @@ src/ve: /lib/x86_64-linux-gnu/libcairo-gobject.so.2 \
   /usr/lib/x86_64-linux-gnu/libkeyutils.so.1 \
   /usr/lib/x86_64-linux-gnu/libkrb5.so.3 \
   /usr/lib/x86_64-linux-gnu/libkrb5support.so.0 \
+  /usr/lib/x86_64-linux-gnu/liblber.so.2 \
   /usr/lib/x86_64-linux-gnu/liblcms2.so.2 \
+  /usr/lib/x86_64-linux-gnu/libldap.so.2 \
   /usr/lib/x86_64-linux-gnu/liblzma.so.5 \
   /usr/lib/x86_64-linux-gnu/libm.so.6 \
   /usr/lib/x86_64-linux-gnu/libmbedcrypto.so.16 \
@@ -727,6 +740,7 @@ src/ve: /lib/x86_64-linux-gnu/libcairo-gobject.so.2 \
   /usr/lib/x86_64-linux-gnu/libmpg123.so.0 \
   /usr/lib/x86_64-linux-gnu/libmvec.so.1 \
   /usr/lib/x86_64-linux-gnu/libnettle.so.8 \
+  /usr/lib/x86_64-linux-gnu/libnghttp2.so.14 \
   /usr/lib/x86_64-linux-gnu/libnorm.so.1 \
   /usr/lib/x86_64-linux-gnu/libnuma.so.1 \
   /usr/lib/x86_64-linux-gnu/libogg.so.0 \
@@ -744,24 +758,30 @@ src/ve: /lib/x86_64-linux-gnu/libcairo-gobject.so.2 \
   /usr/lib/x86_64-linux-gnu/libpgm-5.3.so.0 \
   /usr/lib/x86_64-linux-gnu/libpixman-1.so.0 \
   /usr/lib/x86_64-linux-gnu/libpng16.so.16 \
+  /usr/lib/x86_64-linux-gnu/libproxy.so.1 \
+  /usr/lib/x86_64-linux-gnu/libproxy/libpxbackend-1.0.so \
+  /usr/lib/x86_64-linux-gnu/libpsl.so.5 \
+  /usr/lib/x86_64-linux-gnu/libpulse.so.0 \
   /usr/lib/x86_64-linux-gnu/librabbitmq.so.4 \
   /usr/lib/x86_64-linux-gnu/librav1e.so.0.8 \
   /usr/lib/x86_64-linux-gnu/libresolv.so.2 \
   /usr/lib/x86_64-linux-gnu/librist.so.4 \
   /usr/lib/x86_64-linux-gnu/librsvg-2.so.2 \
+  /usr/lib/x86_64-linux-gnu/librtmp.so.1 \
+  /usr/lib/x86_64-linux-gnu/libsasl2.so.2 \
   /usr/lib/x86_64-linux-gnu/libseccomp.so.2 \
   /usr/lib/x86_64-linux-gnu/libselinux.so.1 \
   /usr/lib/x86_64-linux-gnu/libsharpyuv.so.0 \
   /usr/lib/x86_64-linux-gnu/libshine.so.3 \
   /usr/lib/x86_64-linux-gnu/libsnappy.so.1 \
+  /usr/lib/x86_64-linux-gnu/libsndfile.so.1 \
   /usr/lib/x86_64-linux-gnu/libsodium.so.23 \
   /usr/lib/x86_64-linux-gnu/libsoxr.so.0 \
   /usr/lib/x86_64-linux-gnu/libspeex.so.1 \
   /usr/lib/x86_64-linux-gnu/libsrt-gnutls.so.1.5 \
   /usr/lib/x86_64-linux-gnu/libssh.so.4 \
+  /usr/lib/x86_64-linux-gnu/libssh2.so.1 \
   /usr/lib/x86_64-linux-gnu/libssl.so.3 \
-  /usr/lib/x86_64-linux-gnu/libswresample.so.6 \
-  /usr/lib/x86_64-linux-gnu/libswscale.so \
   /usr/lib/x86_64-linux-gnu/libsystemd.so.0 \
   /usr/lib/x86_64-linux-gnu/libtasn1.so.6 \
   /usr/lib/x86_64-linux-gnu/libthai.so.0 \
@@ -795,6 +815,7 @@ src/ve: /lib/x86_64-linux-gnu/libcairo-gobject.so.2 \
   /usr/lib/x86_64-linux-gnu/libzmq.so.5 \
   /usr/lib/x86_64-linux-gnu/libzstd.so.1 \
   /usr/lib/x86_64-linux-gnu/libzvbi.so.0 \
+  /usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-17.0.so \
   src/CMakeFiles/ve.dir/main.cpp.o \
   src/CMakeFiles/ve.dir/ve_autogen/mocs_compilation.cpp.o \
   src/core/libve_core.a \
@@ -829,10 +850,6 @@ src/render/libve_render.a:
 
 /usr/lib/x86_64-linux-gnu/libsystemd.so.0:
 
-/usr/lib/x86_64-linux-gnu/libswscale.so:
-
-/usr/lib/x86_64-linux-gnu/libswresample.so.6:
-
 /usr/lib/x86_64-linux-gnu/libssl.so.3:
 
 /usr/lib/x86_64-linux-gnu/libssh.so.4:
@@ -840,6 +857,8 @@ src/render/libve_render.a:
 /usr/lib/x86_64-linux-gnu/libsrt-gnutls.so.1.5:
 
 /usr/lib/x86_64-linux-gnu/libsodium.so.23:
+
+/usr/lib/x86_64-linux-gnu/libsndfile.so.1:
 
 /usr/lib/x86_64-linux-gnu/libsnappy.so.1:
 
@@ -856,6 +875,12 @@ src/render/libve_render.a:
 /usr/lib/x86_64-linux-gnu/librav1e.so.0.8:
 
 /usr/lib/x86_64-linux-gnu/librabbitmq.so.4:
+
+/usr/lib/x86_64-linux-gnu/libpulse.so.0:
+
+/usr/lib/x86_64-linux-gnu/libpsl.so.5:
+
+/usr/lib/x86_64-linux-gnu/libproxy.so.1:
 
 /usr/lib/x86_64-linux-gnu/libpng16.so.16:
 
@@ -877,9 +902,13 @@ src/render/libve_render.a:
 
 /usr/lib/x86_64-linux-gnu/libogg.so.0:
 
+/usr/lib/x86_64-linux-gnu/libnghttp2.so.14:
+
 /usr/lib/x86_64-linux-gnu/libmd4c.so.0:
 
 /usr/lib/x86_64-linux-gnu/libmbedcrypto.so.16:
+
+/usr/lib/x86_64-linux-gnu/liblber.so.2:
 
 /usr/lib/x86_64-linux-gnu/libkrb5support.so.0:
 
@@ -917,8 +946,6 @@ src/render/libve_render.a:
 
 /usr/lib/x86_64-linux-gnu/libdrm.so.2:
 
-/usr/lib/x86_64-linux-gnu/libdouble-conversion.so.3:
-
 /usr/lib/x86_64-linux-gnu/libdbus-1.so.3:
 
 /usr/lib/x86_64-linux-gnu/libdav1d.so.7:
@@ -945,9 +972,13 @@ src/render/libve_render.a:
 
 /usr/lib/x86_64-linux-gnu/libb2.so.1:
 
-/usr/lib/x86_64-linux-gnu/libavcodec.so:
+/usr/lib/x86_64-linux-gnu/libdouble-conversion.so.3:
+
+/usr/lib/x86_64-linux-gnu/libasyncns.so.0:
 
 /usr/lib/x86_64-linux-gnu/libaribb24.so.0:
+
+/usr/lib/x86_64-linux-gnu/libapparmor.so.1:
 
 /usr/lib/x86_64-linux-gnu/libXrender.so.1:
 
@@ -975,6 +1006,8 @@ src/render/libve_render.a:
 
 /usr/lib/x86_64-linux-gnu/libGLX.so:
 
+/usr/lib/x86_64-linux-gnu/libFLAC.so.14:
+
 /usr/lib/x86_64-linux-gnu/libEGL.so.1:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so:
@@ -985,7 +1018,15 @@ src/render/libve_render.a:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o:
 
+/usr/lib/x86_64-linux-gnu/libswscale.so:
+
+/usr/lib/x86_64-linux-gnu/libswresample.so:
+
 /usr/lib/x86_64-linux-gnu/libm.so:
+
+/usr/lib/x86_64-linux-gnu/librtmp.so.1:
+
+/usr/lib/x86_64-linux-gnu/libavcodec.so:
 
 /usr/lib/x86_64-linux-gnu/crtn.o:
 
@@ -1043,6 +1084,8 @@ src/CMakeFiles/ve.dir/main.cpp.o:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow:
 
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFrame:
+
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h:
@@ -1050,6 +1093,8 @@ src/CMakeFiles/ve.dir/main.cpp.o:
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h:
+
+/usr/lib/x86_64-linux-gnu/libssh2.so.1:
 
 /usr/lib/x86_64-linux-gnu/libharfbuzz.so.0:
 
@@ -1068,6 +1113,8 @@ src/CMakeFiles/ve.dir/main.cpp.o:
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QButtonGroup:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h:
 
@@ -1205,6 +1252,8 @@ src/playback/libve_playback.a:
 
 /usr/include/strings.h:
 
+/usr/lib/x86_64-linux-gnu/libduktape.so.207:
+
 /usr/include/c++/15/optional:
 
 /usr/include/c++/15/bits/predefined_ops.h:
@@ -1296,6 +1345,8 @@ src/playback/libve_playback.a:
 /usr/include/c++/15/bits/valarray_array.h:
 
 /usr/include/c++/15/pstl/glue_numeric_defs.h:
+
+/usr/lib/x86_64-linux-gnu/libcurl-gnutls.so.4:
 
 /usr/include/linux/close_range.h:
 
@@ -1491,6 +1542,8 @@ src/playback/libve_playback.a:
 
 /usr/include/c++/15/bits/stl_tempbuf.h:
 
+/usr/lib/x86_64-linux-gnu/libsasl2.so.2:
+
 /usr/include/c++/15/bits/iterator_concepts.h:
 
 /usr/include/asm-generic/int-ll64.h:
@@ -1598,6 +1651,8 @@ src/playback/libve_playback.a:
 /usr/include/c++/15/bits/unicode.h:
 
 /usr/include/c++/15/bits/stl_multiset.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qbuttongroup.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qregion.h:
 
@@ -1783,6 +1838,8 @@ src/ve_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qpair.h:
 
+/usr/lib/x86_64-linux-gnu/libproxy/libpxbackend-1.0.so:
+
 /usr/include/c++/15/bits/sstream.tcc:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h:
@@ -1961,6 +2018,8 @@ src/ve_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
+/usr/lib/x86_64-linux-gnu/libldap.so.2:
+
 /usr/lib/x86_64-linux-gnu/crti.o:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayalgorithms.h:
@@ -2092,6 +2151,8 @@ src/CMakeFiles/ve.dir/ve_autogen/mocs_compilation.cpp.o:
 /usr/lib/x86_64-linux-gnu/libatomic.so.1:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/lib/x86_64-linux-gnu/libproxy.so.1:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
@@ -2358,6 +2419,8 @@ src/core/libve_core.a:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringconverter_base.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringfwd.h:
+
+/usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-17.0.so:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtconfigmacros.h:
 

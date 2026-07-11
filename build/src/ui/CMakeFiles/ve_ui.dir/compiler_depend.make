@@ -587,18 +587,24 @@ src/ui/CMakeFiles/ve_ui.dir/effects_panel.cpp.o: /run/media/uash/V-Files/VIRTUAL
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qvalidator.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QComboBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDoubleSpinBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFormLayout \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGroupBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLayout \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QScrollArea \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSlider \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemdelegate.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcombobox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qformlayout.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
@@ -608,6 +614,7 @@ src/ui/CMakeFiles/ve_ui.dir/effects_panel.cpp.o: /run/media/uash/V-Files/VIRTUAL
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qscrollarea.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qspinbox.h \
@@ -1062,6 +1069,7 @@ src/ui/CMakeFiles/ve_ui.dir/main_window.cpp.o: /run/media/uash/V-Files/VIRTUAL/M
   /usr/include/x86_64-linux-gnu/c++/15/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QBuffer \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QElapsedTimer \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
@@ -1087,6 +1095,7 @@ src/ui/CMakeFiles/ve_ui.dir/main_window.cpp.o: /run/media/uash/V-Files/VIRTUAL/M
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qatomic_cxx11.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasicatomic.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbuffer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayalgorithms.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearraylist.h \
@@ -1214,6 +1223,7 @@ src/ui/CMakeFiles/ve_ui.dir/main_window.cpp.o: /run/media/uash/V-Files/VIRTUAL/M
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QAction \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QImage \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QOpenGLFunctions \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QShortcut \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QSurfaceFormat \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
@@ -1241,6 +1251,7 @@ src/ui/CMakeFiles/ve_ui.dir/main_window.cpp.o: /run/media/uash/V-Files/VIRTUAL/M
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qregion.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgb.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgba64.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qshortcut.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qsurfaceformat.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h \
@@ -1249,15 +1260,31 @@ src/ui/CMakeFiles/ve_ui.dir/main_window.cpp.o: /run/media/uash/V-Files/VIRTUAL/M
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qvalidator.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/QAudioFormat \
+  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/QAudioSink \
+  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudio.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudiodevice.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudioformat.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudiosink.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtaudio.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimedia-config.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimediaexports.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimediaglobal.h \
   /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/QOpenGLWidget \
   /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/qopenglwidget.h \
   /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/qtopenglwidgetsexports.h \
   /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/qtopenglwidgetsglobal.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QButtonGroup \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QComboBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDoubleSpinBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFileDialog \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFormLayout \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFrame \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGroupBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLayout \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QListWidget \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMenu \
@@ -1277,12 +1304,16 @@ src/ui/CMakeFiles/ve_ui.dir/main_window.cpp.o: /run/media/uash/V-Files/VIRTUAL/M
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qbuttongroup.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcombobox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialogbuttonbox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qfiledialog.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qformlayout.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgroupbox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
@@ -3808,9 +3839,15 @@ src/ui/CMakeFiles/ve_ui.dir/ve_ui_autogen/mocs_compilation.cpp.o: src/ui/ve_ui_a
   /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/qopenglwidget.h \
   /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/qtopenglwidgetsexports.h \
   /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/qtopenglwidgetsglobal.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QButtonGroup \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QComboBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDoubleSpinBox \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFormLayout \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFrame \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGroupBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLayout \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QListWidget \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
@@ -3823,9 +3860,17 @@ src/ui/CMakeFiles/ve_ui.dir/ve_ui_autogen/mocs_compilation.cpp.o: src/ui/ve_ui_a
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qbuttongroup.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcombobox.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qformlayout.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgroupbox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistview.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistwidget.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
@@ -4513,8 +4558,6 @@ src/ui/ve_ui_autogen/EWIEGA46WW/moc_media_browser.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qvector2d.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h:
-
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen_platform.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpointingdevice.h:
@@ -4559,8 +4602,6 @@ src/ui/ve_ui_autogen/EWIEGA46WW/moc_media_browser.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h:
-
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMenuBar:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow:
@@ -4569,11 +4610,31 @@ src/ui/ve_ui_autogen/EWIEGA46WW/moc_media_browser.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFileDialog:
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFrame:
 
 /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/qtopenglwidgetsglobal.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimediaexports.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimedia-config.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudiosink.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFileDialog:
+
+/usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudioformat.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudio.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtMultimedia/QAudioSink:
+
+/usr/include/x86_64-linux-gnu/qt6/QtMultimedia/QAudioFormat:
+
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qsurfaceformat.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudiodevice.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qopenglfunctions.h:
 
@@ -4598,6 +4659,8 @@ src/ui/ve_ui_autogen/EWIEGA46WW/moc_media_browser.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qbuffer.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QElapsedTimer:
 
@@ -4661,9 +4724,13 @@ src/ui/ve_ui_autogen/EWIEGA46WW/moc_timeline_widget.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcombobox.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget:
 
@@ -4672,6 +4739,8 @@ src/ui/ve_ui_autogen/EWIEGA46WW/moc_timeline_widget.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLayout:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QComboBox:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qdir.h:
 
@@ -4700,6 +4769,10 @@ src/ui/ve_ui_autogen/EWIEGA46WW/moc_timeline_widget.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QButtonGroup:
+
+/usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimediaglobal.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h:
 
@@ -5145,6 +5218,8 @@ src/ui/ve_ui_autogen/EWIEGA46WW/moc_main_window.cpp:
 
 /usr/include/c++/15/bits/valarray_after.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qscrollarea.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h:
@@ -5276,6 +5351,8 @@ src/ui/ve_ui_autogen/EWIEGA46WW/moc_main_window.cpp:
 /usr/include/c++/15/bits/unicode.h:
 
 /usr/include/c++/15/bits/stl_multiset.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qbuttongroup.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qregion.h:
 
@@ -5458,6 +5535,8 @@ src/ui/ve_ui_autogen/EWIEGA46WW/moc_effects_panel.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringmatcher.h:
 
 /usr/include/nlohmann/detail/abi_macros.hpp:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/QShortcut:
 
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
@@ -5741,6 +5820,8 @@ src/ui/ve_ui_autogen/EWIEGA46WW/moc_effects_panel.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qshortcut.h:
+
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
@@ -5757,11 +5838,15 @@ src/ui/ve_ui_autogen/EWIEGA46WW/moc_effects_panel.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompare_impl.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QScrollArea:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterator.h:
 
 /usr/include/c++/15/cstdio:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QBuffer:
 
 /usr/include/c++/15/bits/atomic_wait.h:
 
@@ -5834,6 +5919,8 @@ src/ui/ve_ui_autogen/EWIEGA46WW/moc_effects_panel.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtenvironmentvariables.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qatomic_cxx11.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtaudio.h:
 
 /usr/include/c++/15/utility:
 

@@ -1,8 +1,12 @@
 #pragma once
 #include <QWidget>
 #include <QDoubleSpinBox>
+#include <QSlider>
 #include <QComboBox>
+#include <QCheckBox>
+#include <QFormLayout>
 #include <QLabel>
+#include <QGroupBox>
 
 class Project;
 
@@ -21,6 +25,10 @@ signals:
 
 private:
     void setupUI();
+    void addParamRow(QFormLayout* form, const QString& label, 
+                     QDoubleSpinBox*& spin, QSlider*& slider,
+                     double min, double max, double step);
+
     void updateValues();
     void onSpinChanged();
     void onBlendChanged(int index);
@@ -29,12 +37,18 @@ private:
     QString m_trackId;
     QString m_clipId;
 
-    QLabel* m_clipNameLabel;
-    QDoubleSpinBox* m_posX;
-    QDoubleSpinBox* m_posY;
-    QDoubleSpinBox* m_scaleX;
-    QDoubleSpinBox* m_scaleY;
-    QDoubleSpinBox* m_rotation;
-    QDoubleSpinBox* m_opacity;
-    QComboBox* m_blendMode;
+    QLabel* m_clipNameLabel = nullptr;
+
+    QDoubleSpinBox *m_posXSpin = nullptr, *m_posYSpin = nullptr;
+    QDoubleSpinBox *m_scaleXSpin = nullptr, *m_scaleYSpin = nullptr;
+    QDoubleSpinBox *m_rotSpin = nullptr, *m_opSpin = nullptr;
+    QDoubleSpinBox *m_anchorXSpin = nullptr, *m_anchorYSpin = nullptr;
+
+    QSlider *m_posXSlider = nullptr, *m_posYSlider = nullptr;
+    QSlider *m_scaleXSlider = nullptr, *m_scaleYSlider = nullptr;
+    QSlider *m_rotSlider = nullptr, *m_opSlider = nullptr;
+    QSlider *m_anchorXSlider = nullptr, *m_anchorYSlider = nullptr;
+
+    QComboBox* m_blendMode = nullptr;
+    QCheckBox* m_motionBlur = nullptr;
 };

@@ -144,11 +144,17 @@ void TimelineWidget::paintEvent(QPaintEvent*) {
             int cw = std::max(2, timeToX(clip.trackOffset + clip.sourceDuration) - x);
 
             bool selected = (clip.id == m_selClipId && track.id == m_selTrackId);
-            QColor cc = selected ? QColor(70, 140, 230) : QColor(55, 110, 190);
+            QColor cc = clipColor(clip);
+            if (selected) cc = cc.lighter(120);
             if (!clip.enabled) cc = cc.darker(150);
 
             // Clip body
             p.fillRect(x + 1, y + 1, cw - 1, h - 2, cc);
+
+            // Waveform for audio clips
+            if (track.type == TrackType::Audio) {
+                paintWaveform(p, clip, x, y, cw, h);
+            }
 
             // Selection border
             p.setPen(selected ? QPen(QColor(180, 210, 255), 2)
@@ -192,6 +198,37 @@ void TimelineWidget::paintEvent(QPaintEvent*) {
         p.setPen(Qt::NoPen);
         p.drawPolygon(tri);
     }
+}
+
+QColor TimelineWidget::clipColor(const Clip& clip) const {
+    // Generate consistent color from clip ID
+    uint hash = qHash(clip.id);
+    int h = hash % 360;
+    return QColor::fromHsv(h, 180, 200);
+}
+
+void TimelineWidget::paintWaveform(QPainter& p, const Clip& clip, int x, int y, int w, int h) {
+    // Simple decorative waveform - in production you'd decode actual audio
+    p.setPen(QPen(QColor(255, 255, 255, 60), 1));
+    
+    int midY = y + m_trackH / 2;
+    int halfH = m_trackH / 2 - 4;
+    int samples = std::min(w, 100);
+    double phase = qHash(clip.id) * 0.01;
+    
+    QPolygonF wave;
+    wave << QPointF(x, midY);
+    for (int i = 0; i <= samples; ++i) {
+        double t = static_cast<double>(i) / samples;
+        double amp = 0.3 + 0.7 * t; // Fade in
+        double v = sin((t * 8 + phase) * M_PI) * amp * halfH;
+        wave << QPointF(x + i * w / samples, midY - v);
+    }
+    wave << QPointF(x + w, midY);
+    
+    p.setBrush(QColor(255, 255, 255, 40));
+    p.setPen(Qt::NoPen);
+    p.drawPolygon(wave);
 }
 
 void TimelineWidget::paintTrackHeader(QPainter& p, int index, const Track& track) {

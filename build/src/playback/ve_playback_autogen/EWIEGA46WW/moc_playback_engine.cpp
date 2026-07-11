@@ -45,7 +45,10 @@ template <> constexpr inline auto PlaybackEngine::qt_create_metaobjectdata<qt_me
         "time",
         "playbackStarted",
         "playbackPaused",
-        "playbackStopped"
+        "playbackStopped",
+        "onAudioStateChanged",
+        "QAudio::State",
+        "state"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -59,6 +62,10 @@ template <> constexpr inline auto PlaybackEngine::qt_create_metaobjectdata<qt_me
         QtMocHelpers::SignalData<void()>(6, 2, QMC::AccessPublic, QMetaType::Void),
         // Signal 'playbackStopped'
         QtMocHelpers::SignalData<void()>(7, 2, QMC::AccessPublic, QMetaType::Void),
+        // Slot 'onAudioStateChanged'
+        QtMocHelpers::SlotData<void(QAudio::State)>(8, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { 0x80000000 | 9, 10 },
+        }}),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -86,6 +93,7 @@ void PlaybackEngine::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         case 1: _t->playbackStarted(); break;
         case 2: _t->playbackPaused(); break;
         case 3: _t->playbackStopped(); break;
+        case 4: _t->onAudioStateChanged((*reinterpret_cast<std::add_pointer_t<QAudio::State>>(_a[1]))); break;
         default: ;
         }
     }
@@ -120,14 +128,14 @@ int PlaybackEngine::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 5;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 5)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 4;
+        _id -= 5;
     }
     return _id;
 }

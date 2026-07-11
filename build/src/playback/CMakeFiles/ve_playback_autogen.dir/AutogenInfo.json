@@ -27,7 +27,10 @@
 		"QT_GUI_LIB",
 		"QT_MULTIMEDIA_LIB",
 		"QT_NETWORK_LIB",
-		"QT_NO_DEBUG"
+		"QT_NO_DEBUG",
+		"QT_OPENGLWIDGETS_LIB",
+		"QT_OPENGL_LIB",
+		"QT_WIDGETS_LIB"
 	],
 	"MOC_DEPEND_FILTERS" : 
 	[
@@ -40,12 +43,16 @@
 	[
 		"/run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/playback",
 		"/run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/core",
+		"/run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/render",
 		"/usr/include/x86_64-linux-gnu/qt6/QtCore",
 		"/usr/include/x86_64-linux-gnu/qt6",
 		"/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++",
 		"/usr/include/x86_64-linux-gnu/qt6/QtMultimedia",
 		"/usr/include/x86_64-linux-gnu/qt6/QtGui",
 		"/usr/include/x86_64-linux-gnu/qt6/QtNetwork",
+		"/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets",
+		"/usr/include/x86_64-linux-gnu/qt6/QtOpenGL",
+		"/usr/include/x86_64-linux-gnu/qt6/QtWidgets",
 		"/usr/include",
 		"/usr/include/c++/15",
 		"/usr/include/x86_64-linux-gnu/c++/15",

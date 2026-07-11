@@ -2,11 +2,14 @@
 #include <QOpenGLFunctions>
 #include <QMatrix4x4>
 #include <memory>
+
+class QOpenGLShaderProgram;
+class QOpenGLVertexArrayObject;
+class QOpenGLBuffer;
+class QOpenGLTexture;
 class QImage;
 
-// ponytail: OpenGL renderer for compositing frames, week 2 implementation
-
-class GLRenderer {
+class GLRenderer : protected QOpenGLFunctions {
 public:
     GLRenderer();
     ~GLRenderer();
@@ -16,6 +19,6 @@ public:
     void resize(int width, int height);
 
 private:
-    int m_viewportW = 0;
-    int m_viewportH = 0;
+    struct Impl;
+    std::unique_ptr<Impl> d;
 };
