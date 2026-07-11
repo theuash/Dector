@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/ui/effects_panel.cpp" "src/ui/CMakeFiles/ve_ui.dir/effects_panel.cpp.o" "gcc" "src/ui/CMakeFiles/ve_ui.dir/effects_panel.cpp.o.d"
   "/run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/ui/main_window.cpp" "src/ui/CMakeFiles/ve_ui.dir/main_window.cpp.o" "gcc" "src/ui/CMakeFiles/ve_ui.dir/main_window.cpp.o.d"
   "/run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/ui/media_browser.cpp" "src/ui/CMakeFiles/ve_ui.dir/media_browser.cpp.o" "gcc" "src/ui/CMakeFiles/ve_ui.dir/media_browser.cpp.o.d"
   "/run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/ui/time_ruler.cpp" "src/ui/CMakeFiles/ve_ui.dir/time_ruler.cpp.o" "gcc" "src/ui/CMakeFiles/ve_ui.dir/time_ruler.cpp.o.d"

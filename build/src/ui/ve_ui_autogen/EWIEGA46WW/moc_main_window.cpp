@@ -7,6 +7,7 @@
 *****************************************************************************/
 
 #include "../../../../../src/ui/main_window.h"
+#include <QtGui/qtextcursor.h>
 #include <QtCore/qmetatype.h>
 
 #include <QtCore/qtmochelpers.h>
@@ -47,8 +48,24 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         "onImportMedia",
         "onUndo",
         "onRedo",
-        "onModifiedChanged",
-        "modified"
+        "onPlayPause",
+        "onStop",
+        "onSeekSlider",
+        "value",
+        "onPlayheadMoved",
+        "RationalTime",
+        "time",
+        "onFrameChanged",
+        "onClipSelected",
+        "trackId",
+        "clipId",
+        "onSelectionCleared",
+        "onClipAddedToTimeline",
+        "assetId",
+        "onParamChanged",
+        "paramName",
+        "onBlendChanged",
+        "mode"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -66,9 +83,39 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         QtMocHelpers::SlotData<void()>(7, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'onRedo'
         QtMocHelpers::SlotData<void()>(8, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onModifiedChanged'
-        QtMocHelpers::SlotData<void(bool)>(9, 2, QMC::AccessPrivate, QMetaType::Void, {{
-            { QMetaType::Bool, 10 },
+        // Slot 'onPlayPause'
+        QtMocHelpers::SlotData<void()>(9, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'onStop'
+        QtMocHelpers::SlotData<void()>(10, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'onSeekSlider'
+        QtMocHelpers::SlotData<void(int)>(11, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::Int, 12 },
+        }}),
+        // Slot 'onPlayheadMoved'
+        QtMocHelpers::SlotData<void(const RationalTime &)>(13, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { 0x80000000 | 14, 15 },
+        }}),
+        // Slot 'onFrameChanged'
+        QtMocHelpers::SlotData<void(const RationalTime &)>(16, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { 0x80000000 | 14, 15 },
+        }}),
+        // Slot 'onClipSelected'
+        QtMocHelpers::SlotData<void(const QString &, const QString &)>(17, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::QString, 18 }, { QMetaType::QString, 19 },
+        }}),
+        // Slot 'onSelectionCleared'
+        QtMocHelpers::SlotData<void()>(20, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'onClipAddedToTimeline'
+        QtMocHelpers::SlotData<void(const QString &)>(21, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::QString, 22 },
+        }}),
+        // Slot 'onParamChanged'
+        QtMocHelpers::SlotData<void(const QString &, const QString &, const QString &, double)>(23, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::QString, 18 }, { QMetaType::QString, 19 }, { QMetaType::QString, 24 }, { QMetaType::Double, 12 },
+        }}),
+        // Slot 'onBlendChanged'
+        QtMocHelpers::SlotData<void(const QString &, const QString &, int)>(25, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::QString, 18 }, { QMetaType::QString, 19 }, { QMetaType::Int, 26 },
         }}),
     };
     QtMocHelpers::UintData qt_properties {
@@ -100,7 +147,16 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 4: _t->onImportMedia(); break;
         case 5: _t->onUndo(); break;
         case 6: _t->onRedo(); break;
-        case 7: _t->onModifiedChanged((*reinterpret_cast<std::add_pointer_t<bool>>(_a[1]))); break;
+        case 7: _t->onPlayPause(); break;
+        case 8: _t->onStop(); break;
+        case 9: _t->onSeekSlider((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 10: _t->onPlayheadMoved((*reinterpret_cast<std::add_pointer_t<RationalTime>>(_a[1]))); break;
+        case 11: _t->onFrameChanged((*reinterpret_cast<std::add_pointer_t<RationalTime>>(_a[1]))); break;
+        case 12: _t->onClipSelected((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2]))); break;
+        case 13: _t->onSelectionCleared(); break;
+        case 14: _t->onClipAddedToTimeline((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
+        case 15: _t->onParamChanged((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast<std::add_pointer_t<double>>(_a[4]))); break;
+        case 16: _t->onBlendChanged((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[3]))); break;
         default: ;
         }
     }
@@ -125,14 +181,14 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 8)
+        if (_id < 17)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 17;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 8)
+        if (_id < 17)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 8;
+        _id -= 17;
     }
     return _id;
 }

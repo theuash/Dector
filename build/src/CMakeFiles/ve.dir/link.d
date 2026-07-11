@@ -8,11 +8,11 @@ ve: \
   playback/libve_playback.a \
   render/libve_render.a \
   core/libve_core.a \
+  /usr/lib/x86_64-linux-gnu/libQt6Multimedia.so.6.10.2 \
+  /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.10.2 \
   /usr/lib/x86_64-linux-gnu/libQt6OpenGLWidgets.so.6.10.2 \
   /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.10.2 \
   /usr/lib/x86_64-linux-gnu/libQt6OpenGL.so.6.10.2 \
-  /usr/lib/x86_64-linux-gnu/libQt6Multimedia.so.6.10.2 \
-  /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.10.2 \
   /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.10.2 \
   /usr/lib/x86_64-linux-gnu/libGLX.so \
   /usr/lib/x86_64-linux-gnu/libOpenGL.so \
@@ -98,15 +98,15 @@ render/libve_render.a:
 
 core/libve_core.a:
 
+/usr/lib/x86_64-linux-gnu/libQt6Multimedia.so.6.10.2:
+
+/usr/lib/x86_64-linux-gnu/libQt6Network.so.6.10.2:
+
 /usr/lib/x86_64-linux-gnu/libQt6OpenGLWidgets.so.6.10.2:
 
 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.10.2:
 
 /usr/lib/x86_64-linux-gnu/libQt6OpenGL.so.6.10.2:
-
-/usr/lib/x86_64-linux-gnu/libQt6Multimedia.so.6.10.2:
-
-/usr/lib/x86_64-linux-gnu/libQt6Network.so.6.10.2:
 
 /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.10.2:
 

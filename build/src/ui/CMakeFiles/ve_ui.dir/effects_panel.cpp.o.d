@@ -1,8 +1,7 @@
-src/ui/CMakeFiles/ve_ui.dir/ve_ui_autogen/mocs_compilation.cpp.o: \
- /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/src/ui/ve_ui_autogen/mocs_compilation.cpp \
+src/ui/CMakeFiles/ve_ui.dir/effects_panel.cpp.o: \
+ /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/ui/effects_panel.cpp \
  /usr/include/stdc-predef.h \
- /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/src/ui/ve_ui_autogen/EWIEGA46WW/moc_effects_panel.cpp \
- /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/src/ui/ve_ui_autogen/EWIEGA46WW/../../../../../src/ui/effects_panel.h \
+ /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/ui/effects_panel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -472,19 +471,10 @@ src/ui/CMakeFiles/ve_ui.dir/ve_ui_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmochelpers.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmocconstants.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/q20algorithm.h \
- /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/src/ui/ve_ui_autogen/EWIEGA46WW/moc_main_window.cpp \
- /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/src/ui/ve_ui_autogen/EWIEGA46WW/../../../../../src/ui/main_window.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplitter \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsplitter.h \
+ /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/core/project.h \
+ /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/core/sequence.h \
+ /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/core/track.h \
+ /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/core/clip.h \
  /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/core/rational_time.h \
  /usr/include/nlohmann/json.hpp /usr/include/nlohmann/adl_serializer.hpp \
  /usr/include/nlohmann/detail/abi_macros.hpp \
@@ -544,39 +534,25 @@ src/ui/CMakeFiles/ve_ui.dir/ve_ui_autogen/mocs_compilation.cpp.o: \
  /usr/include/nlohmann/ordered_map.hpp /usr/include/c++/15/any \
  /usr/include/nlohmann/detail/macro_unscope.hpp \
  /usr/include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSlider \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
- /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/src/ui/ve_ui_autogen/EWIEGA46WW/moc_media_browser.cpp \
- /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/src/ui/ve_ui_autogen/EWIEGA46WW/../../../../../src/ui/media_browser.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QListWidget \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistwidget.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistview.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qitemselectionmodel.h \
- /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/src/ui/ve_ui_autogen/EWIEGA46WW/moc_time_ruler.cpp \
- /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/src/ui/ve_ui_autogen/EWIEGA46WW/../../../../../src/ui/time_ruler.h \
- /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/src/ui/ve_ui_autogen/EWIEGA46WW/moc_timeline_widget.cpp \
- /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/src/ui/ve_ui_autogen/EWIEGA46WW/../../../../../src/ui/timeline_widget.h \
- /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/src/ui/ve_ui_autogen/EWIEGA46WW/moc_viewer_widget.cpp \
- /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/src/ui/ve_ui_autogen/EWIEGA46WW/../../../../../src/ui/viewer_widget.h \
- /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/QOpenGLWidget \
- /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/qopenglwidget.h \
- /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/qtopenglwidgetsglobal.h \
- /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/qtopenglwidgetsexports.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/QSurfaceFormat \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qsurfaceformat.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qopengl.h /usr/include/GL/gl.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qopenglext.h \
- /usr/include/inttypes.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/QOpenGLFunctions \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qopenglfunctions.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qopenglcontext.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qopenglcontext_platform.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QElapsedTimer \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qelapsedtimer.h
+ /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/core/parameter.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
+ /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/core/asset.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QUuid \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/quuid.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFormLayout \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qformlayout.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLayout \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGroupBox \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgroupbox.h

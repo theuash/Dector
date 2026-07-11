@@ -539,6 +539,9 @@ src/CMakeFiles/ve.dir/main.cpp.o: /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/ma
   /usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h \
   /usr/lib/gcc/x86_64-linux-gnu/15/include/syslimits.h
 
+src/CMakeFiles/ve.dir/ve_autogen/mocs_compilation.cpp.o: src/ve_autogen/mocs_compilation.cpp \
+  /usr/include/stdc-predef.h
+
 src/ve: /lib64/ld-linux-x86-64.so.2 \
   /usr/lib/x86_64-linux-gnu/Scrt1.o \
   /usr/lib/x86_64-linux-gnu/crti.o \
@@ -597,6 +600,7 @@ src/ve: /lib64/ld-linux-x86-64.so.2 \
   /usr/lib/x86_64-linux-gnu/libz.so.1 \
   /usr/lib/x86_64-linux-gnu/libzstd.so.1 \
   src/CMakeFiles/ve.dir/main.cpp.o \
+  src/CMakeFiles/ve.dir/ve_autogen/mocs_compilation.cpp.o \
   src/core/libve_core.a \
   src/playback/libve_playback.a \
   src/render/libve_render.a \
@@ -668,6 +672,8 @@ src/render/libve_render.a:
 /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o:
 
 /usr/lib/x86_64-linux-gnu/libm.so:
+
+/usr/lib/x86_64-linux-gnu/crtn.o:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
@@ -921,8 +927,6 @@ src/playback/libve_playback.a:
 
 /usr/include/c++/15/initializer_list:
 
-/usr/include/ctype.h:
-
 /usr/include/c++/15/bits/locale_conv.h:
 
 /usr/lib/x86_64-linux-gnu/libQt6OpenGLWidgets.so.6.10.2:
@@ -966,6 +970,10 @@ src/playback/libve_playback.a:
 /usr/include/locale.h:
 
 /usr/include/c++/15/bits/allocated_ptr.h:
+
+/usr/include/ctype.h:
+
+src/ve_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/15/bits/version.h:
 
@@ -1357,6 +1365,8 @@ src/playback/libve_playback.a:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-macros.h:
 
+src/CMakeFiles/ve.dir/ve_autogen/mocs_compilation.cpp.o:
+
 /usr/include/c++/15/ios:
 
 /usr/include/c++/15/bits/std_abs.h:
@@ -1476,8 +1486,6 @@ src/playback/libve_playback.a:
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
-
-/usr/lib/x86_64-linux-gnu/crtn.o:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 

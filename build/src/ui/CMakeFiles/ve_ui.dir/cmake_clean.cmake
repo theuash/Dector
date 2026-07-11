@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ve_ui_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/ve_ui_autogen.dir/ParseCache.txt"
   "ve_ui_autogen"
+  "CMakeFiles/ve_ui.dir/effects_panel.cpp.o"
+  "CMakeFiles/ve_ui.dir/effects_panel.cpp.o.d"
   "CMakeFiles/ve_ui.dir/main_window.cpp.o"
   "CMakeFiles/ve_ui.dir/main_window.cpp.o.d"
   "CMakeFiles/ve_ui.dir/media_browser.cpp.o"

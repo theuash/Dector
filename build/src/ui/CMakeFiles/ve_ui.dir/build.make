@@ -156,6 +156,20 @@ src/ui/CMakeFiles/ve_ui.dir/time_ruler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ve_ui.dir/time_ruler.cpp.s"
 	cd /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/src/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/ui/time_ruler.cpp -o CMakeFiles/ve_ui.dir/time_ruler.cpp.s
 
+src/ui/CMakeFiles/ve_ui.dir/effects_panel.cpp.o: src/ui/CMakeFiles/ve_ui.dir/flags.make
+src/ui/CMakeFiles/ve_ui.dir/effects_panel.cpp.o: /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/ui/effects_panel.cpp
+src/ui/CMakeFiles/ve_ui.dir/effects_panel.cpp.o: src/ui/CMakeFiles/ve_ui.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/ui/CMakeFiles/ve_ui.dir/effects_panel.cpp.o"
+	cd /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/src/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/ui/CMakeFiles/ve_ui.dir/effects_panel.cpp.o -MF CMakeFiles/ve_ui.dir/effects_panel.cpp.o.d -o CMakeFiles/ve_ui.dir/effects_panel.cpp.o -c /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/ui/effects_panel.cpp
+
+src/ui/CMakeFiles/ve_ui.dir/effects_panel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ve_ui.dir/effects_panel.cpp.i"
+	cd /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/src/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/ui/effects_panel.cpp > CMakeFiles/ve_ui.dir/effects_panel.cpp.i
+
+src/ui/CMakeFiles/ve_ui.dir/effects_panel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ve_ui.dir/effects_panel.cpp.s"
+	cd /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/src/ui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/ui/effects_panel.cpp -o CMakeFiles/ve_ui.dir/effects_panel.cpp.s
+
 # Object files for target ve_ui
 ve_ui_OBJECTS = \
 "CMakeFiles/ve_ui.dir/ve_ui_autogen/mocs_compilation.cpp.o" \
@@ -163,7 +177,8 @@ ve_ui_OBJECTS = \
 "CMakeFiles/ve_ui.dir/media_browser.cpp.o" \
 "CMakeFiles/ve_ui.dir/viewer_widget.cpp.o" \
 "CMakeFiles/ve_ui.dir/timeline_widget.cpp.o" \
-"CMakeFiles/ve_ui.dir/time_ruler.cpp.o"
+"CMakeFiles/ve_ui.dir/time_ruler.cpp.o" \
+"CMakeFiles/ve_ui.dir/effects_panel.cpp.o"
 
 # External object files for target ve_ui
 ve_ui_EXTERNAL_OBJECTS =
@@ -174,9 +189,10 @@ src/ui/libve_ui.a: src/ui/CMakeFiles/ve_ui.dir/media_browser.cpp.o
 src/ui/libve_ui.a: src/ui/CMakeFiles/ve_ui.dir/viewer_widget.cpp.o
 src/ui/libve_ui.a: src/ui/CMakeFiles/ve_ui.dir/timeline_widget.cpp.o
 src/ui/libve_ui.a: src/ui/CMakeFiles/ve_ui.dir/time_ruler.cpp.o
+src/ui/libve_ui.a: src/ui/CMakeFiles/ve_ui.dir/effects_panel.cpp.o
 src/ui/libve_ui.a: src/ui/CMakeFiles/ve_ui.dir/build.make
 src/ui/libve_ui.a: src/ui/CMakeFiles/ve_ui.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libve_ui.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libve_ui.a"
 	cd /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/src/ui && $(CMAKE_COMMAND) -P CMakeFiles/ve_ui.dir/cmake_clean_target.cmake
 	cd /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/src/ui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ve_ui.dir/link.txt --verbose=$(VERBOSE)
 

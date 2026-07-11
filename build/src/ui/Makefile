@@ -158,6 +158,30 @@ ve_ui_autogen/fast:
 	cd /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build && $(MAKE) $(MAKESILENT) -f src/ui/CMakeFiles/ve_ui_autogen.dir/build.make src/ui/CMakeFiles/ve_ui_autogen.dir/build
 .PHONY : ve_ui_autogen/fast
 
+effects_panel.o: effects_panel.cpp.o
+.PHONY : effects_panel.o
+
+# target to build an object file
+effects_panel.cpp.o:
+	cd /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build && $(MAKE) $(MAKESILENT) -f src/ui/CMakeFiles/ve_ui.dir/build.make src/ui/CMakeFiles/ve_ui.dir/effects_panel.cpp.o
+.PHONY : effects_panel.cpp.o
+
+effects_panel.i: effects_panel.cpp.i
+.PHONY : effects_panel.i
+
+# target to preprocess a source file
+effects_panel.cpp.i:
+	cd /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build && $(MAKE) $(MAKESILENT) -f src/ui/CMakeFiles/ve_ui.dir/build.make src/ui/CMakeFiles/ve_ui.dir/effects_panel.cpp.i
+.PHONY : effects_panel.cpp.i
+
+effects_panel.s: effects_panel.cpp.s
+.PHONY : effects_panel.s
+
+# target to generate assembly for a file
+effects_panel.cpp.s:
+	cd /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build && $(MAKE) $(MAKESILENT) -f src/ui/CMakeFiles/ve_ui.dir/build.make src/ui/CMakeFiles/ve_ui.dir/effects_panel.cpp.s
+.PHONY : effects_panel.cpp.s
+
 main_window.o: main_window.cpp.o
 .PHONY : main_window.o
 
@@ -313,6 +337,9 @@ help:
 	@echo "... ve_ui_autogen"
 	@echo "... ve_ui_autogen_timestamp_deps"
 	@echo "... ve_ui"
+	@echo "... effects_panel.o"
+	@echo "... effects_panel.i"
+	@echo "... effects_panel.s"
 	@echo "... main_window.o"
 	@echo "... main_window.i"
 	@echo "... main_window.s"

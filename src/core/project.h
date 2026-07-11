@@ -39,6 +39,9 @@ public:
     QString name() const { return m_name; }
     void setName(const QString& n);
 
+    // For direct edits from UI (timeline trim, etc.)
+    void notifyChanged();
+
 signals:
     void assetAdded(const QString& id);
     void assetRemoved(const QString& id);

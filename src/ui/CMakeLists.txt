@@ -4,6 +4,7 @@ add_library(ve_ui STATIC
     viewer_widget.cpp
     timeline_widget.cpp
     time_ruler.cpp
+    effects_panel.cpp
 )
 target_include_directories(ve_ui PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
-target_link_libraries(ve_ui PUBLIC Qt6::Core Qt6::Gui Qt6::Widgets Qt6::OpenGLWidgets ve_core)
+target_link_libraries(ve_ui PUBLIC Qt6::Core Qt6::Gui Qt6::Widgets Qt6::OpenGLWidgets ve_core ve_playback)

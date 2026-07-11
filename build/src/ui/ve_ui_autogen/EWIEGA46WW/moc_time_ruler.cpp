@@ -38,10 +38,18 @@ template <> constexpr inline auto TimeRuler::qt_create_metaobjectdata<qt_meta_ta
 {
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
-        "TimeRuler"
+        "TimeRuler",
+        "playheadClicked",
+        "",
+        "RationalTime",
+        "time"
     };
 
     QtMocHelpers::UintData qt_methods {
+        // Signal 'playheadClicked'
+        QtMocHelpers::SignalData<void(const RationalTime &)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { 0x80000000 | 3, 4 },
+        }}),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -63,10 +71,16 @@ Q_CONSTINIT const QMetaObject TimeRuler::staticMetaObject = { {
 void TimeRuler::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     auto *_t = static_cast<TimeRuler *>(_o);
-    (void)_t;
-    (void)_c;
-    (void)_id;
-    (void)_a;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        switch (_id) {
+        case 0: _t->playheadClicked((*reinterpret_cast<std::add_pointer_t<RationalTime>>(_a[1]))); break;
+        default: ;
+        }
+    }
+    if (_c == QMetaObject::IndexOfMethod) {
+        if (QtMocHelpers::indexOfMethod<void (TimeRuler::*)(const RationalTime & )>(_a, &TimeRuler::playheadClicked, 0))
+            return;
+    }
 }
 
 const QMetaObject *TimeRuler::metaObject() const
@@ -85,6 +99,24 @@ void *TimeRuler::qt_metacast(const char *_clname)
 int TimeRuler::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QWidget::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 1)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 1;
+    }
+    if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 1)
+            *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
+        _id -= 1;
+    }
     return _id;
+}
+
+// SIGNAL 0
+void TimeRuler::playheadClicked(const RationalTime & _t1)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 0, nullptr, _t1);
 }
 QT_WARNING_POP

@@ -116,11 +116,11 @@ src/ve: src/ui/libve_ui.a
 src/ve: src/playback/libve_playback.a
 src/ve: src/render/libve_render.a
 src/ve: src/core/libve_core.a
+src/ve: /usr/lib/x86_64-linux-gnu/libQt6Multimedia.so.6.10.2
+src/ve: /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.10.2
 src/ve: /usr/lib/x86_64-linux-gnu/libQt6OpenGLWidgets.so.6.10.2
 src/ve: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.10.2
 src/ve: /usr/lib/x86_64-linux-gnu/libQt6OpenGL.so.6.10.2
-src/ve: /usr/lib/x86_64-linux-gnu/libQt6Multimedia.so.6.10.2
-src/ve: /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.10.2
 src/ve: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.10.2
 src/ve: /usr/lib/x86_64-linux-gnu/libGLX.so
 src/ve: /usr/lib/x86_64-linux-gnu/libOpenGL.so

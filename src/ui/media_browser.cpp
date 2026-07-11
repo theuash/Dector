@@ -2,18 +2,48 @@
 #include "project.h"
 #include <QVBoxLayout>
 #include <QLabel>
+#include <QMenu>
+#include <QAction>
 
 MediaBrowser::MediaBrowser(Project* project, QWidget* parent)
     : QWidget(parent), m_project(project) {
     auto* layout = new QVBoxLayout(this);
-    layout->setContentsMargins(4, 4, 4, 4);
+    layout->setContentsMargins(0, 0, 0, 0);
 
+    auto* header = new QWidget(this);
+    auto* hLayout = new QHBoxLayout(header);
+    hLayout->setContentsMargins(8, 4, 8, 4);
     auto* label = new QLabel("Media Browser", this);
-    label->setStyleSheet("font-weight: bold; padding: 4px;");
-    layout->addWidget(label);
+    label->setStyleSheet("font-weight: bold; color: #ccc; font-size: 11px;");
+    hLayout->addWidget(label);
+    hLayout->addStretch();
+    layout->addWidget(header);
 
     m_list = new QListWidget(this);
+    m_list->setAlternatingRowColors(true);
+    m_list->setStyleSheet(
+        "QListWidget { background: #222; border: none; color: #ddd; }"
+        "QListWidget::item { padding: 4px 8px; }"
+        "QListWidget::item:selected { background: #2a5080; }"
+        "QListWidget::item:alternate { background: #282828; }");
     layout->addWidget(m_list);
+
+    // Context menu
+    m_list->setContextMenuPolicy(Qt::CustomContextMenu);
+    connect(m_list, &QWidget::customContextMenuRequested, this, [this](const QPoint& pos) {
+        auto* item = m_list->itemAt(pos);
+        if (!item) return;
+        QMenu menu(this);
+        menu.addAction("Add to Timeline", this, [this, item]() {
+            emit clipAddedToTimeline(item->data(Qt::UserRole).toString());
+        });
+        menu.exec(m_list->mapToGlobal(pos));
+    });
+
+    // Double-click to add
+    connect(m_list, &QListWidget::itemDoubleClicked, this, [this](QListWidgetItem* item) {
+        emit clipAddedToTimeline(item->data(Qt::UserRole).toString());
+    });
 
     if (m_project) {
         connect(m_project, &Project::assetAdded, this, [this](const QString&) { refresh(); });
@@ -23,9 +53,7 @@ MediaBrowser::MediaBrowser(Project* project, QWidget* parent)
 }
 
 void MediaBrowser::setProject(Project* project) {
-    if (m_project) {
-        disconnect(m_project, nullptr, this, nullptr);
-    }
+    if (m_project) disconnect(m_project, nullptr, this, nullptr);
     m_project = project;
     if (m_project) {
         connect(m_project, &Project::assetAdded, this, [this](const QString&) { refresh(); });

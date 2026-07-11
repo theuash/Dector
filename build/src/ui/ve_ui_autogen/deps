@@ -2,6 +2,8 @@ ve_ui_autogen/timestamp: \
 	/run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/src/ui/ve_ui_autogen/moc_predefs.h \
 	/run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/core/rational_time.h \
 	/run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/ui/CMakeLists.txt \
+	/run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/ui/effects_panel.cpp \
+	/run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/ui/effects_panel.h \
 	/run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/ui/main_window.cpp \
 	/run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/ui/main_window.h \
 	/run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/ui/media_browser.cpp \
@@ -400,6 +402,7 @@ ve_ui_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/c++/15/bits/time_members.h \
 	/usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
 	/usr/include/x86_64-linux-gnu/gnu/stubs.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtCore/QElapsedTimer \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h \
@@ -439,6 +442,7 @@ ve_ui_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qdarwinhelpers.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtCore/qelapsedtimer.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qendian.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qexceptionhandling.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qflags.h \
@@ -451,6 +455,7 @@ ve_ui_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qglobalstatic.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevicebase.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qitemselectionmodel.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qiterable.h \
@@ -526,6 +531,7 @@ ve_ui_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qtversionchecks.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qtypes.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qutf8stringview.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
@@ -553,6 +559,7 @@ ve_ui_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qopenglfunctions.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qpaintdevice.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qpalette.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtGui/qpicture.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qpolygon.h \
@@ -560,6 +567,7 @@ ve_ui_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qrgb.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qrgba64.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qsurfaceformat.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
@@ -570,22 +578,32 @@ ve_ui_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/qopenglwidget.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/qtopenglwidgetsexports.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/qtopenglwidgetsglobal.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QComboBox \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDoubleSpinBox \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QListWidget \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSlider \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplitter \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemdelegate.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcombobox.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistview.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistwidget.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qspinbox.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsplitter.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleoption.h \

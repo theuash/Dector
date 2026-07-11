@@ -205,6 +205,11 @@ void Project::setName(const QString& n) {
     setModified(true);
 }
 
+void Project::notifyChanged() {
+    setModified(true);
+    emit sequenceChanged();
+}
+
 Track* Project::findTrack(const QString& id) const {
     auto* seq = currentSequence();
     if (!seq) return nullptr;

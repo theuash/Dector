@@ -10,6 +10,9 @@ public:
     explicit MediaBrowser(Project* project, QWidget* parent = nullptr);
     void setProject(Project* project);
 
+signals:
+    void clipAddedToTimeline(const QString& assetId);
+
 private:
     void refresh();
     Project* m_project = nullptr;
