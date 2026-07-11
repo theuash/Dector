@@ -1,0 +1,9 @@
+{
+  "name": "ve",
+  "version": "0.1.0",
+  "dependencies": [
+    "qtbase",
+    "qtmultimedia",
+    "nlohmann-json"
+  ]
+}

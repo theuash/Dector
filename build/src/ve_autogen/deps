@@ -1,0 +1,4 @@
+ve_autogen/timestamp: \
+	/run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/CMakeLists.txt \
+	/run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/main.cpp \
+	/usr/bin/cmake

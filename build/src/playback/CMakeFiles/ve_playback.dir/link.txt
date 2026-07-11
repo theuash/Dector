@@ -1,0 +1,2 @@
+/usr/bin/ar qc libve_playback.a CMakeFiles/ve_playback.dir/ve_playback_autogen/mocs_compilation.cpp.o CMakeFiles/ve_playback.dir/playback_engine.cpp.o
+/usr/bin/ranlib libve_playback.a

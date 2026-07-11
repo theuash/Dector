@@ -1,0 +1,2 @@
+/usr/bin/ar qc libve_render.a CMakeFiles/ve_render.dir/ve_render_autogen/mocs_compilation.cpp.o CMakeFiles/ve_render.dir/media_decoder.cpp.o CMakeFiles/ve_render.dir/gl_renderer.cpp.o CMakeFiles/ve_render.dir/export_pipeline.cpp.o
+/usr/bin/ranlib libve_render.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libve_ui.a CMakeFiles/ve_ui.dir/ve_ui_autogen/mocs_compilation.cpp.o CMakeFiles/ve_ui.dir/main_window.cpp.o CMakeFiles/ve_ui.dir/media_browser.cpp.o CMakeFiles/ve_ui.dir/viewer_widget.cpp.o CMakeFiles/ve_ui.dir/timeline_widget.cpp.o CMakeFiles/ve_ui.dir/time_ruler.cpp.o
+/usr/bin/ranlib libve_ui.a

@@ -1,0 +1,11 @@
+# Hashes of file build rules.
+a2522727b48d823925483939942c90ad src/CMakeFiles/ve_autogen
+9365dd4c6d58c731990339af11cc6c4f src/core/CMakeFiles/ve_core_autogen
+213948f38abcf061d70e724868cd8e33 src/core/ve_core_autogen/timestamp
+6776f680bac3d57ccd77436f1804cf86 src/playback/CMakeFiles/ve_playback_autogen
+055ca38b22fa537e6bc25ddbc095394d src/playback/ve_playback_autogen/timestamp
+3eff3df144709a59eec14ac12230eff5 src/render/CMakeFiles/ve_render_autogen
+9c5236a5291cc3c0ac639142e29ba55d src/render/ve_render_autogen/timestamp
+091cd6aa51dc971a498dcfd1c45340e9 src/ui/CMakeFiles/ve_ui_autogen
+c6c482a556d0b214d8ad7744be710b62 src/ui/ve_ui_autogen/timestamp
+c9dc6234abe03bcbf1dcd5694371f023 src/ve_autogen/timestamp

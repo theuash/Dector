@@ -1,0 +1,2 @@
+/usr/bin/ar qc libve_core.a CMakeFiles/ve_core.dir/ve_core_autogen/mocs_compilation.cpp.o CMakeFiles/ve_core.dir/rational_time.cpp.o CMakeFiles/ve_core.dir/asset.cpp.o CMakeFiles/ve_core.dir/parameter.cpp.o CMakeFiles/ve_core.dir/clip.cpp.o CMakeFiles/ve_core.dir/track.cpp.o CMakeFiles/ve_core.dir/sequence.cpp.o CMakeFiles/ve_core.dir/command.cpp.o CMakeFiles/ve_core.dir/project.cpp.o
+/usr/bin/ranlib libve_core.a

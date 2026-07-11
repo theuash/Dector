@@ -1,0 +1,12 @@
+{
+	"InstallScripts" : 
+	[
+		"/run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/cmake_install.cmake",
+		"/run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/src/cmake_install.cmake",
+		"/run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/src/core/cmake_install.cmake",
+		"/run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/src/render/cmake_install.cmake",
+		"/run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/src/playback/cmake_install.cmake",
+		"/run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/src/ui/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
