@@ -1067,6 +1067,8 @@
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QButtonGroup
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFrame
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton
@@ -1074,6 +1076,7 @@
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplitter
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qbuttongroup.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h
@@ -2004,7 +2007,6 @@
  mdp:/usr/include/x86_64-linux-gnu/c++/15/bits/time_members.h
  mdp:/usr/include/x86_64-linux-gnu/gnu/stubs-64.h
  mdp:/usr/include/x86_64-linux-gnu/gnu/stubs.h
- mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QElapsedTimer
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h
@@ -2043,7 +2045,6 @@
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/qdarwinhelpers.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h
- mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/qelapsedtimer.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/qendian.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/qexceptionhandling.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/qflags.h
@@ -2134,6 +2135,7 @@
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtGui/QImage
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtGui/QOpenGLFunctions
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtGui/QSurfaceFormat
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h

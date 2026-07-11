@@ -12,6 +12,7 @@ public:
 
 signals:
     void clipAddedToTimeline(const QString& assetId);
+    void sourcePreviewRequested(const QString& assetId);
 
 private:
     void refresh();

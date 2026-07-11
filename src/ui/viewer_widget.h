@@ -1,8 +1,8 @@
 #pragma once
 #include <QOpenGLWidget>
 #include <QOpenGLFunctions>
+#include <QImage>
 #include "rational_time.h"
-#include <QElapsedTimer>
 
 class Project;
 
@@ -11,6 +11,9 @@ class ViewerWidget : public QOpenGLWidget, protected QOpenGLFunctions {
 public:
     explicit ViewerWidget(QWidget* parent = nullptr);
     void setProject(Project* project) { m_project = project; }
+
+    void setFrame(const QImage& frame);
+    void setFrameSize(int w, int h) { m_frameW = w; m_frameH = h; }
 
 public slots:
     void setCurrentTime(const RationalTime& time);
@@ -24,11 +27,14 @@ protected:
 
 signals:
     void playPaused();
-    void stopped();
-    void seeked(const RationalTime& time);
 
 private:
+    QString formatTime(const RationalTime& t) const;
+
     Project* m_project = nullptr;
+    QImage m_currentFrame;
     RationalTime m_currentTime{0, 30};
     RationalTime m_duration{300, 30};
+    int m_frameW = 1920;
+    int m_frameH = 1080;
 };

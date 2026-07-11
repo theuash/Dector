@@ -34,13 +34,21 @@ MediaBrowser::MediaBrowser(Project* project, QWidget* parent)
         auto* item = m_list->itemAt(pos);
         if (!item) return;
         QMenu menu(this);
+        menu.addAction("Preview", this, [this, item]() {
+            emit sourcePreviewRequested(item->data(Qt::UserRole).toString());
+        });
         menu.addAction("Add to Timeline", this, [this, item]() {
             emit clipAddedToTimeline(item->data(Qt::UserRole).toString());
         });
         menu.exec(m_list->mapToGlobal(pos));
     });
 
-    // Double-click to add
+    // Single click → source preview
+    connect(m_list, &QListWidget::itemClicked, this, [this](QListWidgetItem* item) {
+        emit sourcePreviewRequested(item->data(Qt::UserRole).toString());
+    });
+
+    // Double-click → add to timeline
     connect(m_list, &QListWidget::itemDoubleClicked, this, [this](QListWidgetItem* item) {
         emit clipAddedToTimeline(item->data(Qt::UserRole).toString());
     });

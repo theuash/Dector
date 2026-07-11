@@ -8,4 +8,10 @@ set(CMAKE_AUTOMOC ON)
 find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets OpenGLWidgets Multimedia)
 find_package(nlohmann_json REQUIRED)
 
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(AVCODEC IMPORTED_TARGET libavcodec)
+pkg_check_modules(AVFORMAT IMPORTED_TARGET libavformat)
+pkg_check_modules(AVUTIL IMPORTED_TARGET libavutil)
+pkg_check_modules(SWSCALE IMPORTED_TARGET libswscale)
+
 add_subdirectory(src)

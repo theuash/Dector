@@ -641,6 +641,7 @@ src/ui/CMakeFiles/ve_ui.dir/main_window.cpp.o: /run/media/uash/V-Files/VIRTUAL/M
   /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/core/sequence.h \
   /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/core/track.h \
   /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/playback/playback_engine.h \
+  /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/render/media_decoder.h \
   /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/ui/effects_panel.h \
   /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/ui/main_window.h \
   /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/ui/media_browser.h \
@@ -1211,6 +1212,7 @@ src/ui/CMakeFiles/ve_ui.dir/main_window.cpp.o: /run/media/uash/V-Files/VIRTUAL/M
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QAction \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QImage \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QOpenGLFunctions \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QSurfaceFormat \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \
@@ -3624,7 +3626,6 @@ src/ui/CMakeFiles/ve_ui.dir/ve_ui_autogen/mocs_compilation.cpp.o: src/ui/ve_ui_a
   /usr/include/x86_64-linux-gnu/c++/15/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QElapsedTimer \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20algorithm.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
@@ -3665,7 +3666,6 @@ src/ui/CMakeFiles/ve_ui.dir/ve_ui_autogen/mocs_compilation.cpp.o: src/ui/ve_ui_a
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdarwinhelpers.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qelapsedtimer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qendian.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qexceptionhandling.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qflags.h \
@@ -3763,6 +3763,7 @@ src/ui/CMakeFiles/ve_ui.dir/ve_ui_autogen/mocs_compilation.cpp.o: src/ui/ve_ui_a
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QImage \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QOpenGLFunctions \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QSurfaceFormat \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \
@@ -4277,7 +4278,6 @@ src/ui/CMakeFiles/ve_ui.dir/viewer_widget.cpp.o: /run/media/uash/V-Files/VIRTUAL
   /usr/include/x86_64-linux-gnu/c++/15/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QElapsedTimer \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
@@ -4330,7 +4330,6 @@ src/ui/CMakeFiles/ve_ui.dir/viewer_widget.cpp.o: /run/media/uash/V-Files/VIRTUAL
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdeadlinetimer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qelapsedtimer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qendian.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qexceptionhandling.h \
@@ -4426,6 +4425,7 @@ src/ui/CMakeFiles/ve_ui.dir/viewer_widget.cpp.o: /run/media/uash/V-Files/VIRTUAL
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QImage \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QMouseEvent \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QOpenGLFunctions \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter \
@@ -5563,6 +5563,8 @@ src/ui/ve_ui_autogen/EWIEGA46WW/moc_effects_panel.cpp:
 
 /usr/include/nlohmann/json.hpp:
 
+/usr/include/x86_64-linux-gnu/qt6/QtGui/QImage:
+
 /usr/include/nlohmann/json_fwd.hpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtdeprecationdefinitions.h:
@@ -5792,6 +5794,8 @@ src/ui/ve_ui_autogen/EWIEGA46WW/moc_effects_panel.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap:
 
 /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/ui/viewer_widget.cpp:
+
+/run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/render/media_decoder.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject:
 

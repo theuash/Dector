@@ -3,7 +3,11 @@
 #include <QImage>
 #include <memory>
 
-// ponytail: FFmpeg decode wrapper, week 2 implementation
+struct AVFormatContext;
+struct AVCodecContext;
+struct AVFrame;
+struct AVPacket;
+struct SwsContext;
 
 class MediaDecoder : public QObject {
     Q_OBJECT
@@ -23,6 +27,13 @@ public:
     bool isOpen() const { return m_open; }
 
 private:
+    AVFormatContext* m_formatCtx = nullptr;
+    AVCodecContext* m_codecCtx = nullptr;
+    SwsContext* m_swsCtx = nullptr;
+    AVFrame* m_frame = nullptr;
+    AVPacket* m_packet = nullptr;
+    int m_videoStream = -1;
+
     bool m_open = false;
     double m_duration = 0;
     double m_fps = 30.0;

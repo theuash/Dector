@@ -297,6 +297,12 @@ OPENGL_opengl_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libOpenGL.so
 //Path to a file.
 OPENGL_xmesa_INCLUDE_DIR:PATH=OPENGL_xmesa_INCLUDE_DIR-NOTFOUND
 
+//Arguments to supply to pkg-config
+PKG_CONFIG_ARGN:STRING=
+
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
+
 //Additional directories where find(Qt6 ...) host Qt components
 // are searched
 QT_ADDITIONAL_HOST_PACKAGES_PREFIX_PATH:STRING=
@@ -361,6 +367,18 @@ Vulkan_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libvulkan.so
 //The directory containing a CMake configuration file for nlohmann_json.
 nlohmann_json_DIR:PATH=/usr/share/cmake/nlohmann_json
 
+//Path to a library.
+pkgcfg_lib_AVCODEC_avcodec:FILEPATH=/usr/lib/x86_64-linux-gnu/libavcodec.so
+
+//Path to a library.
+pkgcfg_lib_AVFORMAT_avformat:FILEPATH=/usr/lib/x86_64-linux-gnu/libavformat.so
+
+//Path to a library.
+pkgcfg_lib_AVUTIL_avutil:FILEPATH=/usr/lib/x86_64-linux-gnu/libavutil.so
+
+//Path to a library.
+pkgcfg_lib_SWSCALE_swscale:FILEPATH=/usr/lib/x86_64-linux-gnu/libswscale.so
+
 //Value Computed by CMake
 ve_BINARY_DIR:STATIC=/run/media/uash/V-Files/VIRTUAL/MAIN/VE/build
 
@@ -375,6 +393,111 @@ ve_SOURCE_DIR:STATIC=/run/media/uash/V-Files/VIRTUAL/MAIN/VE
 # INTERNAL cache entries
 ########################
 
+AVCODEC_CFLAGS:INTERNAL=-I/usr/include/x86_64-linux-gnu
+AVCODEC_CFLAGS_I:INTERNAL=
+AVCODEC_CFLAGS_OTHER:INTERNAL=
+AVCODEC_FOUND:INTERNAL=1
+AVCODEC_INCLUDEDIR:INTERNAL=/usr/include/x86_64-linux-gnu
+AVCODEC_INCLUDE_DIRS:INTERNAL=/usr/include/x86_64-linux-gnu
+AVCODEC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lavcodec
+AVCODEC_LDFLAGS_OTHER:INTERNAL=
+AVCODEC_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+AVCODEC_LIBRARIES:INTERNAL=avcodec
+AVCODEC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
+AVCODEC_LIBS:INTERNAL=
+AVCODEC_LIBS_L:INTERNAL=
+AVCODEC_LIBS_OTHER:INTERNAL=
+AVCODEC_LIBS_PATHS:INTERNAL=
+AVCODEC_MODULE_NAME:INTERNAL=libavcodec
+AVCODEC_PREFIX:INTERNAL=/usr
+AVCODEC_STATIC_CFLAGS:INTERNAL=-I/usr/include/x86_64-linux-gnu
+AVCODEC_STATIC_CFLAGS_I:INTERNAL=
+AVCODEC_STATIC_CFLAGS_OTHER:INTERNAL=
+AVCODEC_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/x86_64-linux-gnu
+AVCODEC_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lavcodec;-lvpx;-lm;-lvpx;-lm;-lvpx;-lm;-lvpx;-lm;-lwebpmux;-pthread;-lm;-latomic;-llzma;-ldav1d;-lrsvg-2;-lgdk_pixbuf-2.0;-lgio-2.0;-lcairo;-lgobject-2.0;-lglib-2.0;-lzvbi;-lpthread;-lm;-lpng;-lz;-lsnappy;-lstdc++;-laom;-lcodec2;-lgsm;-ljxl;-ljxl_threads;-lmp3lame;-lm;-lopenjp2;-lopus;-lrav1e;-lm;-lshine;-lspeex;-lSvtAv1Enc;-ltheoraenc;-ltheoradec;-logg;-ltwolame;-lvorbis;-lvorbisenc;-lwebp;-lx264;-lx265;-lxvidcore;-lglslang;-lMachineIndependent;-lGenericCodeGen;-lSPIRV;-lSPIRV-Tools-opt;-lSPIRV-Tools;-lpthread;-lstdc++;-lm;-lz;-lva;-L/usr/lib/x86_64-linux-gnu/pkgconfig/../;-lvpl;-ldl;-lswresample;-lm;-lsoxr;-latomic;-lavutil;-lva-drm;-lva;-lva-x11;-lva;-lvdpau;-lX11;-lm;-ldrm;-L/usr/lib/x86_64-linux-gnu/pkgconfig/../;-lvpl;-ldl;-lOpenCL;-lva;-latomic;-pthread;-lX11
+AVCODEC_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread;-pthread
+AVCODEC_STATIC_LIBDIR:INTERNAL=
+AVCODEC_STATIC_LIBRARIES:INTERNAL=avcodec;vpx;m;vpx;m;vpx;m;vpx;m;webpmux;m;atomic;lzma;dav1d;rsvg-2;gdk_pixbuf-2.0;gio-2.0;cairo;gobject-2.0;glib-2.0;zvbi;pthread;m;png;z;snappy;stdc++;aom;codec2;gsm;jxl;jxl_threads;mp3lame;m;openjp2;opus;rav1e;m;shine;speex;SvtAv1Enc;theoraenc;theoradec;ogg;twolame;vorbis;vorbisenc;webp;x264;x265;xvidcore;glslang;MachineIndependent;GenericCodeGen;SPIRV;SPIRV-Tools-opt;SPIRV-Tools;pthread;stdc++;m;z;va;vpl;dl;swresample;m;soxr;atomic;avutil;va-drm;va;va-x11;va;vdpau;X11;m;drm;vpl;dl;OpenCL;va;atomic;X11
+AVCODEC_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu/pkgconfig/../;/usr/lib/x86_64-linux-gnu/pkgconfig/../
+AVCODEC_STATIC_LIBS:INTERNAL=
+AVCODEC_STATIC_LIBS_L:INTERNAL=
+AVCODEC_STATIC_LIBS_OTHER:INTERNAL=
+AVCODEC_STATIC_LIBS_PATHS:INTERNAL=
+AVCODEC_VERSION:INTERNAL=62.11.100
+AVCODEC_libavcodec_INCLUDEDIR:INTERNAL=
+AVCODEC_libavcodec_LIBDIR:INTERNAL=
+AVCODEC_libavcodec_PREFIX:INTERNAL=
+AVCODEC_libavcodec_VERSION:INTERNAL=
+AVFORMAT_CFLAGS:INTERNAL=-I/usr/include/x86_64-linux-gnu
+AVFORMAT_CFLAGS_I:INTERNAL=
+AVFORMAT_CFLAGS_OTHER:INTERNAL=
+AVFORMAT_FOUND:INTERNAL=1
+AVFORMAT_INCLUDEDIR:INTERNAL=/usr/include/x86_64-linux-gnu
+AVFORMAT_INCLUDE_DIRS:INTERNAL=/usr/include/x86_64-linux-gnu
+AVFORMAT_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lavformat
+AVFORMAT_LDFLAGS_OTHER:INTERNAL=
+AVFORMAT_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+AVFORMAT_LIBRARIES:INTERNAL=avformat
+AVFORMAT_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
+AVFORMAT_LIBS:INTERNAL=
+AVFORMAT_LIBS_L:INTERNAL=
+AVFORMAT_LIBS_OTHER:INTERNAL=
+AVFORMAT_LIBS_PATHS:INTERNAL=
+AVFORMAT_MODULE_NAME:INTERNAL=libavformat
+AVFORMAT_PREFIX:INTERNAL=/usr
+AVFORMAT_STATIC_CFLAGS:INTERNAL=-I/usr/include/x86_64-linux-gnu
+AVFORMAT_STATIC_CFLAGS_I:INTERNAL=
+AVFORMAT_STATIC_CFLAGS_OTHER:INTERNAL=
+AVFORMAT_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/x86_64-linux-gnu
+AVFORMAT_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lavformat;-lm;-latomic;-lxml2;-lbz2;-ldvdnav;-ldvdread;-lgme;-lopenmpt;-lstdc++;-lchromaprint;-lbluray;-lz;-lgnutls;-lrabbitmq;-lrist;-lsrt-gnutls;-lssh;-lzmq;-lavcodec;-lvpx;-lm;-lvpx;-lm;-lvpx;-lm;-lvpx;-lm;-lwebpmux;-pthread;-lm;-latomic;-llzma;-ldav1d;-lrsvg-2;-lgdk_pixbuf-2.0;-lgio-2.0;-lcairo;-lgobject-2.0;-lglib-2.0;-lzvbi;-lpthread;-lm;-lpng;-lz;-lsnappy;-lstdc++;-laom;-lcodec2;-lgsm;-ljxl;-ljxl_threads;-lmp3lame;-lm;-lopenjp2;-lopus;-lrav1e;-lm;-lshine;-lspeex;-lSvtAv1Enc;-ltheoraenc;-ltheoradec;-logg;-ltwolame;-lvorbis;-lvorbisenc;-lwebp;-lx264;-lx265;-lxvidcore;-lglslang;-lMachineIndependent;-lGenericCodeGen;-lSPIRV;-lSPIRV-Tools-opt;-lSPIRV-Tools;-lpthread;-lstdc++;-lm;-lz;-lva;-L/usr/lib/x86_64-linux-gnu/pkgconfig/../;-lvpl;-ldl;-lswresample;-lm;-lsoxr;-latomic;-lavutil;-lva-drm;-lva;-lva-x11;-lva;-lvdpau;-lX11;-lm;-ldrm;-L/usr/lib/x86_64-linux-gnu/pkgconfig/../;-lvpl;-ldl;-lOpenCL;-lva;-latomic;-pthread;-lX11
+AVFORMAT_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread;-pthread
+AVFORMAT_STATIC_LIBDIR:INTERNAL=
+AVFORMAT_STATIC_LIBRARIES:INTERNAL=avformat;m;atomic;xml2;bz2;dvdnav;dvdread;gme;openmpt;stdc++;chromaprint;bluray;z;gnutls;rabbitmq;rist;srt-gnutls;ssh;zmq;avcodec;vpx;m;vpx;m;vpx;m;vpx;m;webpmux;m;atomic;lzma;dav1d;rsvg-2;gdk_pixbuf-2.0;gio-2.0;cairo;gobject-2.0;glib-2.0;zvbi;pthread;m;png;z;snappy;stdc++;aom;codec2;gsm;jxl;jxl_threads;mp3lame;m;openjp2;opus;rav1e;m;shine;speex;SvtAv1Enc;theoraenc;theoradec;ogg;twolame;vorbis;vorbisenc;webp;x264;x265;xvidcore;glslang;MachineIndependent;GenericCodeGen;SPIRV;SPIRV-Tools-opt;SPIRV-Tools;pthread;stdc++;m;z;va;vpl;dl;swresample;m;soxr;atomic;avutil;va-drm;va;va-x11;va;vdpau;X11;m;drm;vpl;dl;OpenCL;va;atomic;X11
+AVFORMAT_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu/pkgconfig/../;/usr/lib/x86_64-linux-gnu/pkgconfig/../
+AVFORMAT_STATIC_LIBS:INTERNAL=
+AVFORMAT_STATIC_LIBS_L:INTERNAL=
+AVFORMAT_STATIC_LIBS_OTHER:INTERNAL=
+AVFORMAT_STATIC_LIBS_PATHS:INTERNAL=
+AVFORMAT_VERSION:INTERNAL=62.3.100
+AVFORMAT_libavformat_INCLUDEDIR:INTERNAL=
+AVFORMAT_libavformat_LIBDIR:INTERNAL=
+AVFORMAT_libavformat_PREFIX:INTERNAL=
+AVFORMAT_libavformat_VERSION:INTERNAL=
+AVUTIL_CFLAGS:INTERNAL=-I/usr/include/x86_64-linux-gnu
+AVUTIL_CFLAGS_I:INTERNAL=
+AVUTIL_CFLAGS_OTHER:INTERNAL=
+AVUTIL_FOUND:INTERNAL=1
+AVUTIL_INCLUDEDIR:INTERNAL=/usr/include/x86_64-linux-gnu
+AVUTIL_INCLUDE_DIRS:INTERNAL=/usr/include/x86_64-linux-gnu
+AVUTIL_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lavutil
+AVUTIL_LDFLAGS_OTHER:INTERNAL=
+AVUTIL_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+AVUTIL_LIBRARIES:INTERNAL=avutil
+AVUTIL_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
+AVUTIL_LIBS:INTERNAL=
+AVUTIL_LIBS_L:INTERNAL=
+AVUTIL_LIBS_OTHER:INTERNAL=
+AVUTIL_LIBS_PATHS:INTERNAL=
+AVUTIL_MODULE_NAME:INTERNAL=libavutil
+AVUTIL_PREFIX:INTERNAL=/usr
+AVUTIL_STATIC_CFLAGS:INTERNAL=-I/usr/include/x86_64-linux-gnu
+AVUTIL_STATIC_CFLAGS_I:INTERNAL=
+AVUTIL_STATIC_CFLAGS_OTHER:INTERNAL=
+AVUTIL_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/x86_64-linux-gnu
+AVUTIL_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lavutil;-lva-drm;-lva;-lva-x11;-lva;-lvdpau;-lX11;-lm;-ldrm;-L/usr/lib/x86_64-linux-gnu/pkgconfig/../;-lvpl;-ldl;-lOpenCL;-lva;-latomic;-pthread;-lX11
+AVUTIL_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread
+AVUTIL_STATIC_LIBDIR:INTERNAL=
+AVUTIL_STATIC_LIBRARIES:INTERNAL=avutil;va-drm;va;va-x11;va;vdpau;X11;m;drm;vpl;dl;OpenCL;va;atomic;X11
+AVUTIL_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu/pkgconfig/../
+AVUTIL_STATIC_LIBS:INTERNAL=
+AVUTIL_STATIC_LIBS_L:INTERNAL=
+AVUTIL_STATIC_LIBS_OTHER:INTERNAL=
+AVUTIL_STATIC_LIBS_PATHS:INTERNAL=
+AVUTIL_VERSION:INTERNAL=60.8.100
+AVUTIL_libavutil_INCLUDEDIR:INTERNAL=
+AVUTIL_libavutil_LIBDIR:INTERNAL=
+AVUTIL_libavutil_PREFIX:INTERNAL=
+AVUTIL_libavutil_VERSION:INTERNAL=
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -542,6 +665,8 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libOpenGL.so][/usr/lib/x86_64-linux-gnu/libGLX.so][/usr/include][ ][v()]
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v2.5.1()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding WrapAtomic
@@ -580,6 +705,10 @@ OPENGL_glx_LIBRARY-ADVANCED:INTERNAL=1
 OPENGL_opengl_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_xmesa_INCLUDE_DIR
 OPENGL_xmesa_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_ARGN
+PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //Qt feature: aaudio (from target Qt6::Multimedia)
 QT_FEATURE_aaudio:INTERNAL=OFF
 //Qt feature: abstractbutton (from target Qt6::Widgets)
@@ -1522,6 +1651,41 @@ QT_FEATURE_xmlstreamwriter:INTERNAL=ON
 QT_FEATURE_xrender:INTERNAL=OFF
 //Qt feature: zstd (from target Qt6::Core)
 QT_FEATURE_zstd:INTERNAL=ON
+SWSCALE_CFLAGS:INTERNAL=-I/usr/include/x86_64-linux-gnu
+SWSCALE_CFLAGS_I:INTERNAL=
+SWSCALE_CFLAGS_OTHER:INTERNAL=
+SWSCALE_FOUND:INTERNAL=1
+SWSCALE_INCLUDEDIR:INTERNAL=/usr/include/x86_64-linux-gnu
+SWSCALE_INCLUDE_DIRS:INTERNAL=/usr/include/x86_64-linux-gnu
+SWSCALE_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lswscale
+SWSCALE_LDFLAGS_OTHER:INTERNAL=
+SWSCALE_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+SWSCALE_LIBRARIES:INTERNAL=swscale
+SWSCALE_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
+SWSCALE_LIBS:INTERNAL=
+SWSCALE_LIBS_L:INTERNAL=
+SWSCALE_LIBS_OTHER:INTERNAL=
+SWSCALE_LIBS_PATHS:INTERNAL=
+SWSCALE_MODULE_NAME:INTERNAL=libswscale
+SWSCALE_PREFIX:INTERNAL=/usr
+SWSCALE_STATIC_CFLAGS:INTERNAL=-I/usr/include/x86_64-linux-gnu
+SWSCALE_STATIC_CFLAGS_I:INTERNAL=
+SWSCALE_STATIC_CFLAGS_OTHER:INTERNAL=
+SWSCALE_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/x86_64-linux-gnu
+SWSCALE_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lswscale;-lm;-latomic;-lavutil;-lva-drm;-lva;-lva-x11;-lva;-lvdpau;-lX11;-lm;-ldrm;-L/usr/lib/x86_64-linux-gnu/pkgconfig/../;-lvpl;-ldl;-lOpenCL;-lva;-latomic;-pthread;-lX11
+SWSCALE_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread
+SWSCALE_STATIC_LIBDIR:INTERNAL=
+SWSCALE_STATIC_LIBRARIES:INTERNAL=swscale;m;atomic;avutil;va-drm;va;va-x11;va;vdpau;X11;m;drm;vpl;dl;OpenCL;va;atomic;X11
+SWSCALE_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu/pkgconfig/../
+SWSCALE_STATIC_LIBS:INTERNAL=
+SWSCALE_STATIC_LIBS_L:INTERNAL=
+SWSCALE_STATIC_LIBS_OTHER:INTERNAL=
+SWSCALE_STATIC_LIBS_PATHS:INTERNAL=
+SWSCALE_VERSION:INTERNAL=9.1.100
+SWSCALE_libswscale_INCLUDEDIR:INTERNAL=
+SWSCALE_libswscale_LIBDIR:INTERNAL=
+SWSCALE_libswscale_PREFIX:INTERNAL=
+SWSCALE_libswscale_VERSION:INTERNAL=
 //ADVANCED property for variable: Vulkan_GLSLANG_VALIDATOR_EXECUTABLE
 Vulkan_GLSLANG_VALIDATOR_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Vulkan_GLSLC_EXECUTABLE
@@ -1532,4 +1696,21 @@ Vulkan_INCLUDE_DIR-ADVANCED:INTERNAL=1
 Vulkan_LIBRARY-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
+__pkg_config_arguments_AVCODEC:INTERNAL=IMPORTED_TARGET;libavcodec
+__pkg_config_arguments_AVFORMAT:INTERNAL=IMPORTED_TARGET;libavformat
+__pkg_config_arguments_AVUTIL:INTERNAL=IMPORTED_TARGET;libavutil
+__pkg_config_arguments_SWSCALE:INTERNAL=IMPORTED_TARGET;libswscale
+__pkg_config_checked_AVCODEC:INTERNAL=1
+__pkg_config_checked_AVFORMAT:INTERNAL=1
+__pkg_config_checked_AVUTIL:INTERNAL=1
+__pkg_config_checked_SWSCALE:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_AVCODEC_avcodec
+pkgcfg_lib_AVCODEC_avcodec-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_AVFORMAT_avformat
+pkgcfg_lib_AVFORMAT_avformat-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_AVUTIL_avutil
+pkgcfg_lib_AVUTIL_avutil-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_SWSCALE_swscale
+pkgcfg_lib_SWSCALE_swscale-ADVANCED:INTERNAL=1
+prefix_result:INTERNAL=/usr/lib/x86_64-linux-gnu
 

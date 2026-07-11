@@ -4,8 +4,9 @@
 #include <QMouseEvent>
 #include <QWheelEvent>
 #include <QKeyEvent>
+#include <QUuid>
 #include <algorithm>
-#include <cmath>
+#include <limits>
 
 TimelineWidget::TimelineWidget(Project* project, QWidget* parent)
     : QWidget(parent), m_project(project) {
@@ -27,13 +28,22 @@ void TimelineWidget::setPixelsPerSecond(int pps) {
     emit zoomChanged(m_pixelsPerSecond);
 }
 
+void TimelineWidget::setTool(TimelineTool tool) {
+    m_tool = tool;
+    setCursor(tool == TimelineTool::Razor ? Qt::SplitHCursor : Qt::ArrowCursor);
+}
+
 void TimelineWidget::setPlayheadTime(const RationalTime& time) {
     m_playheadTime = time;
     update();
 }
 
-int TimelineWidget::trackY(int index) const {
-    return 4 + index * (trackHeight() + 4);
+int TimelineWidget::trackIndexAt(int y) const {
+    for (int i = 0;; i++) {
+        int ty = trackY(i);
+        if (y >= ty && y < ty + m_trackH) return i;
+        if (ty > y) return -1;
+    }
 }
 
 int TimelineWidget::timeToX(const RationalTime& t) const {
@@ -43,6 +53,56 @@ int TimelineWidget::timeToX(const RationalTime& t) const {
 RationalTime TimelineWidget::xToTime(int x) const {
     int rx = std::max(0, x - labelWidth());
     return RationalTime::fromSeconds(static_cast<double>(rx) / m_pixelsPerSecond, 30.0);
+}
+
+int TimelineWidget::snapX(int x, int avoidX) const {
+    if (!m_project) return x;
+    auto* seq = m_project->currentSequence();
+    if (!seq) return x;
+
+    int best = x;
+    int bestDist = m_snapThreshold;
+
+    // Snap to playhead
+    int phx = timeToX(m_playheadTime);
+    int d = std::abs(x - phx);
+    if (d < bestDist && phx != avoidX) { bestDist = d; best = phx; }
+
+    // Snap to clip edges
+    for (const auto& track : seq->tracks) {
+        for (const auto& clip : track.clips) {
+            for (int ex : {timeToX(clip.trackOffset), timeToX(clip.endTime())}) {
+                d = std::abs(x - ex);
+                if (d < bestDist && ex != avoidX) { bestDist = d; best = ex; }
+            }
+        }
+    }
+    return best;
+}
+
+RationalTime TimelineWidget::snapTime(const RationalTime& t, const QString& skipClipId) const {
+    if (!m_project) return t;
+    auto* seq = m_project->currentSequence();
+    if (!seq) return t;
+
+    RationalTime best = t;
+    int bestDist = m_snapThreshold;
+
+    auto check = [&](const RationalTime& ct) {
+        RationalTime d = ct > t ? ct - t : t - ct;
+        int dist = static_cast<int>(d.toSeconds() * m_pixelsPerSecond);
+        if (dist < bestDist) { bestDist = dist; best = ct; }
+    };
+
+    check(m_playheadTime);
+    for (const auto& track : seq->tracks) {
+        for (const auto& clip : track.clips) {
+            if (clip.id == skipClipId) continue;
+            check(clip.trackOffset);
+            check(clip.endTime());
+        }
+    }
+    return best;
 }
 
 void TimelineWidget::paintEvent(QPaintEvent*) {
@@ -57,93 +117,204 @@ void TimelineWidget::paintEvent(QPaintEvent*) {
         return;
     }
 
-    // Draw tracks
+    // Divider between header and clips
+    p.fillRect(labelWidth() - 1, 0, 1, height(), QColor(60, 60, 60));
+
     int nTracks = static_cast<int>(seq->tracks.size());
     for (int i = 0; i < nTracks; ++i) {
         const auto& track = seq->tracks[i];
         int y = trackY(i);
-        int h = trackHeight();
+        int h = m_trackH;
 
         // Track background
-        QColor tbg = (i % 2 == 0) ? QColor(45, 45, 45) : QColor(38, 38, 38);
+        QColor tbg = (i % 2 == 0) ? QColor(42, 42, 42) : QColor(36, 36, 36);
         if (!track.enabled) tbg = tbg.darker(130);
         p.fillRect(0, y, width(), h, tbg);
 
-        // Track label
-        QColor tc = track.type == TrackType::Video ? QColor(100, 180, 255) : QColor(100, 255, 150);
-        p.setPen(tc);
-        p.setFont(QFont("sans-serif", 9));
-        p.drawText(4, y, labelWidth() - 8, h, Qt::AlignLeft | Qt::AlignVCenter,
-                   track.locked ? track.name + " \xF0\x9F\x94\x92" : track.name);
+        // Track row separator
+        p.setPen(QColor(50, 50, 50));
+        p.drawLine(0, y, width(), y);
+
+        // Track header
+        paintTrackHeader(p, i, track);
 
         // Clips
         for (const auto& clip : track.clips) {
             int x = timeToX(clip.trackOffset);
             int cw = std::max(2, timeToX(clip.trackOffset + clip.sourceDuration) - x);
 
-            // Clip fill
             bool selected = (clip.id == m_selClipId && track.id == m_selTrackId);
-            QColor cc = selected ? QColor(80, 150, 240) : QColor(60, 120, 200);
+            QColor cc = selected ? QColor(70, 140, 230) : QColor(55, 110, 190);
             if (!clip.enabled) cc = cc.darker(150);
+
+            // Clip body
             p.fillRect(x + 1, y + 1, cw - 1, h - 2, cc);
 
             // Selection border
-            if (selected) {
-                p.setPen(QPen(QColor(200, 220, 255), 2));
-                p.drawRect(x, y, cw, h);
-            } else {
-                p.setPen(QColor(40, 90, 160));
-                p.drawRect(x, y, cw, h);
+            p.setPen(selected ? QPen(QColor(180, 210, 255), 2)
+                              : QPen(QColor(40, 80, 140), 1));
+            p.drawRect(x, y, cw, h);
+
+            // Trim handles
+            if (cw > 24 && m_tool == TimelineTool::Selection) {
+                p.fillRect(x, y + 6, 3, h - 12, QColor(0, 0, 0, 50));
+                p.fillRect(x + cw - 3, y + 6, 3, h - 12, QColor(0, 0, 0, 50));
             }
 
-            // Trim handles (subtle)
-            if (cw > 20) {
-                p.fillRect(x, y + 4, 3, h - 8, QColor(0, 0, 0, 60));
-                p.fillRect(x + cw - 3, y + 4, 3, h - 8, QColor(0, 0, 0, 60));
-            }
-
-            // Clip name
+            // Clip label
             p.setPen(Qt::white);
             p.setFont(QFont("sans-serif", 9));
-            p.drawText(x + 8, y + 2, cw - 16, h - 4, Qt::AlignLeft | Qt::AlignVCenter,
-                       clip.name.isEmpty() ? "Clip" : clip.name);
+            QRect tr(x + 8, y + 2, cw - 16, h - 4);
+            QString label = clip.name.isEmpty() ? "Clip" : clip.name;
+            if (m_tool == TimelineTool::Razor && cw > 40) {
+                p.setPen(QColor(255, 200, 80));
+            }
+            p.drawText(tr, Qt::AlignLeft | Qt::AlignVCenter, label);
         }
+    }
+
+    // Duration end mark
+    RationalTime dur = seq->calculateDuration();
+    int durX = timeToX(dur);
+    if (durX > labelWidth() && durX < width()) {
+        p.setPen(QPen(QColor(70, 70, 70), 1, Qt::DashLine));
+        p.drawLine(durX, 0, durX, height());
     }
 
     // Playhead
     int phx = timeToX(m_playheadTime);
     if (phx >= labelWidth() && phx <= width()) {
-        p.setPen(QPen(QColor(255, 80, 80), 2));
+        p.setPen(QPen(QColor(255, 70, 70), 2));
         p.drawLine(phx, 0, phx, height());
-
-        // Playhead handle (triangle at top)
         QPolygonF tri;
         tri << QPointF(phx, 0) << QPointF(phx - 6, 8) << QPointF(phx + 6, 8);
-        p.setBrush(QColor(255, 80, 80));
+        p.setBrush(QColor(255, 70, 70));
         p.setPen(Qt::NoPen);
         p.drawPolygon(tri);
     }
+}
 
-    // Duration end mark
-    if (seq) {
-        RationalTime dur = seq->calculateDuration();
-        int durX = timeToX(dur);
-        if (durX > labelWidth() && durX < width()) {
-            p.setPen(QPen(QColor(80, 80, 80), 1, Qt::DashLine));
-            p.drawLine(durX, 0, durX, height());
+void TimelineWidget::paintTrackHeader(QPainter& p, int index, const Track& track) {
+    int y = trackY(index);
+    int h = m_trackH;
+
+    // Header background
+    QColor bg = track.type == TrackType::Video ? QColor(35, 45, 60) : QColor(45, 40, 35);
+    p.fillRect(0, y, labelWidth(), h, bg);
+
+    // Type icon
+    QString icon = track.type == TrackType::Video ? "\xF0\x9F\x8E\xAC" : "\xF0\x9F\x94\x8A";
+    p.setFont(QFont("sans-serif", 9));
+    p.drawText(4, y, 16, h, Qt::AlignCenter, icon);
+
+    // Track name
+    QColor tc = track.type == TrackType::Video ? QColor(130, 190, 255) : QColor(180, 255, 150);
+    p.setPen(track.locked ? QColor(180, 180, 180) : tc);
+    p.setFont(QFont("sans-serif", 8));
+    p.drawText(22, y, labelWidth() - 24, h / 2, Qt::AlignLeft | Qt::AlignVCenter, track.name);
+
+    // Mute / Solo / Lock indicators
+    int btnY = y + h / 2 + 1;
+    int btnH = h / 2 - 2;
+    p.setFont(QFont("sans-serif", 7));
+
+    // Mute (V)
+    if (!track.enabled) {
+        p.fillRect(4, btnY, 18, btnH, QColor(180, 60, 60));
+        p.setPen(Qt::white);
+        p.drawText(4, btnY, 18, btnH, Qt::AlignCenter, "M");
+    } else {
+        p.setPen(QColor(120, 120, 120));
+        p.drawText(4, btnY, 18, btnH, Qt::AlignCenter, "M");
+    }
+
+    // Lock
+    if (track.locked) {
+        p.fillRect(24, btnY, 18, btnH, QColor(180, 150, 40));
+        p.setPen(Qt::white);
+        p.drawText(24, btnY, 18, btnH, Qt::AlignCenter, "L");
+    } else {
+        p.setPen(QColor(120, 120, 120));
+        p.drawText(24, btnY, 18, btnH, Qt::AlignCenter, "L");
+    }
+
+    // Timeline tool indicator
+    if (m_tool == TimelineTool::Razor) {
+        p.setPen(QColor(255, 200, 80));
+        p.setFont(QFont("sans-serif", 10));
+        p.drawText(48, btnY, 30, btnH, Qt::AlignCenter, "\xE2\x9C\x82");
+    }
+}
+
+void TimelineWidget::razorSplitAt(const QPoint& pos) {
+    if (!m_project) return;
+    auto* seq = m_project->currentSequence();
+    if (!seq) return;
+
+    RationalTime splitTime = xToTime(pos.x());
+
+    for (int i = 0; i < static_cast<int>(seq->tracks.size()); ++i) {
+        int y = trackY(i);
+        if (pos.y() < y || pos.y() >= y + m_trackH) continue;
+
+        auto& clips = seq->tracks[i].clips;
+        for (auto it = clips.begin(); it != clips.end(); ++it) {
+            if (splitTime > it->trackOffset && splitTime < it->endTime()) {
+                RationalTime splitOff = splitTime - it->trackOffset;
+
+                Clip second = *it;
+                second.id = QUuid::createUuid().toString(QUuid::WithoutBraces);
+                second.sourceStart = it->sourceStart + splitOff;
+                second.sourceDuration = it->sourceDuration - splitOff;
+                second.trackOffset = splitTime;
+
+                it->sourceDuration = splitOff;
+                clips.insert(it + 1, second);
+                m_project->notifyChanged();
+                return;
+            }
         }
     }
 }
 
 void TimelineWidget::mousePressEvent(QMouseEvent* event) {
+    int mx = event->pos().x();
+    int my = event->pos().y();
+
     if (!m_project) return;
     auto* seq = m_project->currentSequence();
     if (!seq) return;
 
-    int mx = event->pos().x();
-    int my = event->pos().y();
+    // Handle click on track header buttons
+    if (mx < labelWidth()) {
+        int ti = trackIndexAt(my);
+        if (ti < 0 || ti >= static_cast<int>(seq->tracks.size())) return;
+        int y = trackY(ti);
+        int relY = my - y;
+        auto& track = seq->tracks[ti];
 
-    // Check if clicking on playhead area first
+        // Mute click (first 22px, bottom half)
+        if (relY > m_trackH / 2 && mx < 22) {
+            track.enabled = !track.enabled;
+            m_project->notifyChanged();
+            return;
+        }
+        // Lock click (next 22px, bottom half)
+        if (relY > m_trackH / 2 && mx >= 22 && mx < 44) {
+            track.locked = !track.locked;
+            m_project->notifyChanged();
+            return;
+        }
+        return;
+    }
+
+    // Razor tool
+    if (m_tool == TimelineTool::Razor) {
+        razorSplitAt(event->pos());
+        return;
+    }
+
+    // Check playhead drag
     int phx = timeToX(m_playheadTime);
     if (std::abs(mx - phx) < 6) {
         m_dragMode = DragMode::Playhead;
@@ -154,18 +325,18 @@ void TimelineWidget::mousePressEvent(QMouseEvent* event) {
     // Check clip clicks
     for (int i = 0; i < static_cast<int>(seq->tracks.size()); ++i) {
         int y = trackY(i);
-        int h = trackHeight();
-        if (my < y || my >= y + h) continue;
+        if (my < y || my >= y + m_trackH) continue;
+        if (seq->tracks[i].locked) continue;
 
         for (auto& clip : seq->tracks[i].clips) {
             int cx = timeToX(clip.trackOffset);
             int cw = std::max(2, timeToX(clip.trackOffset + clip.sourceDuration) - cx);
             if (mx < cx || mx > cx + cw) continue;
 
-            // Distinguish trim vs move
-            if (mx - cx < 6 && cw > 20) {
+            // Trim vs move
+            if (mx - cx < 6 && cw > 24) {
                 m_dragMode = DragMode::TrimIn;
-            } else if (cx + cw - mx < 6 && cw > 20) {
+            } else if (cx + cw - mx < 6 && cw > 24) {
                 m_dragMode = DragMode::TrimOut;
             } else {
                 m_dragMode = DragMode::Clip;
@@ -185,19 +356,30 @@ void TimelineWidget::mousePressEvent(QMouseEvent* event) {
         }
     }
 
-    // Clicked empty space → deselect + move playhead
+    // Empty space → deselect + move playhead
     m_selTrackId.clear();
     m_selClipId.clear();
     emit selectionCleared();
-    m_playheadTime = xToTime(mx);
+    m_playheadTime = snapTime(xToTime(mx));
     emit playheadMoved(m_playheadTime);
     update();
 }
 
 void TimelineWidget::mouseMoveEvent(QMouseEvent* event) {
-    if (!m_dragClip || !m_project) { update(); return; }
+    if (!m_project) { update(); return; }
 
-    int dx = event->pos().x() - m_dragStartX;
+    int mx = event->pos().x();
+
+    if (m_dragMode == DragMode::Playhead) {
+        m_playheadTime = snapTime(xToTime(mx));
+        emit playheadMoved(m_playheadTime);
+        update();
+        return;
+    }
+
+    if (!m_dragClip) { update(); return; }
+
+    int dx = mx - m_dragStartX;
     if (std::abs(dx) < 3) return;
 
     double seconds = static_cast<double>(dx) / m_pixelsPerSecond;
@@ -206,10 +388,12 @@ void TimelineWidget::mouseMoveEvent(QMouseEvent* event) {
 
     switch (m_dragMode) {
     case DragMode::Clip: {
-        // ponytail: direct project mutation, undo not wired for timeline drags
-        m_project->moveClip(m_dragTrackId, m_dragClip->id,
-                            m_dragOrigOffset + delta, -1);
-        m_dragStartX = event->pos().x();
+        RationalTime newOff = m_dragOrigOffset + delta;
+        newOff = snapTime(newOff, m_dragClip->id);
+        // Adjust delta to snapped position
+        RationalTime snapDelta = newOff - m_dragOrigOffset;
+        m_project->moveClip(m_dragTrackId, m_dragClip->id, newOff, -1);
+        m_dragStartX = mx;
         break;
     }
     case DragMode::TrimIn: {
@@ -218,7 +402,7 @@ void TimelineWidget::mouseMoveEvent(QMouseEvent* event) {
         if (newStart.num >= 0 && newDur.num > 0) {
             m_dragClip->sourceStart = newStart;
             m_dragClip->sourceDuration = newDur;
-            m_dragStartX = event->pos().x();
+            m_dragStartX = mx;
             m_project->notifyChanged();
         }
         break;
@@ -227,16 +411,10 @@ void TimelineWidget::mouseMoveEvent(QMouseEvent* event) {
         RationalTime newDur = m_dragOrigDuration + delta;
         if (newDur.num > 0) {
             m_dragClip->sourceDuration = newDur;
-            m_dragStartX = event->pos().x();
+            m_dragStartX = mx;
             m_project->notifyChanged();
         }
         break;
-    }
-    case DragMode::Playhead: {
-        m_playheadTime = xToTime(event->pos().x());
-        emit playheadMoved(m_playheadTime);
-        m_dragStartX = event->pos().x();
-        return;
     }
     default: break;
     }

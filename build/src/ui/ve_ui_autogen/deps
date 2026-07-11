@@ -402,7 +402,6 @@ ve_ui_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/c++/15/bits/time_members.h \
 	/usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
 	/usr/include/x86_64-linux-gnu/gnu/stubs.h \
-	/usr/include/x86_64-linux-gnu/qt6/QtCore/QElapsedTimer \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h \
@@ -442,7 +441,6 @@ ve_ui_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qdarwinhelpers.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
-	/usr/include/x86_64-linux-gnu/qt6/QtCore/qelapsedtimer.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qendian.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qexceptionhandling.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qflags.h \
@@ -538,6 +536,7 @@ ve_ui_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtGui/QImage \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/QOpenGLFunctions \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/QSurfaceFormat \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \
@@ -578,8 +577,10 @@ ve_ui_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/qopenglwidget.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/qtopenglwidgetsexports.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/qtopenglwidgetsglobal.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QButtonGroup \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QComboBox \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDoubleSpinBox \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFrame \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QListWidget \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
@@ -593,6 +594,7 @@ ve_ui_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qbuttongroup.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcombobox.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h \

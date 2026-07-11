@@ -405,7 +405,6 @@ src/ui/ve_ui_autogen/timestamp: src/ui/ve_ui_autogen/moc_predefs.h \
   /usr/include/x86_64-linux-gnu/c++/15/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QElapsedTimer \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h \
@@ -445,7 +444,6 @@ src/ui/ve_ui_autogen/timestamp: src/ui/ve_ui_autogen/moc_predefs.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdarwinhelpers.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qelapsedtimer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qendian.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qexceptionhandling.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qflags.h \
@@ -541,6 +539,7 @@ src/ui/ve_ui_autogen/timestamp: src/ui/ve_ui_autogen/moc_predefs.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QImage \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QOpenGLFunctions \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QSurfaceFormat \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \
@@ -733,8 +732,6 @@ src/ui/ve_ui_autogen/timestamp: src/ui/ve_ui_autogen/moc_predefs.h \
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/QSurfaceFormat:
 
 /usr/include/nlohmann/detail/conversions/to_chars.hpp:
 
@@ -1132,6 +1129,8 @@ src/ui/ve_ui_autogen/moc_predefs.h:
 
 /usr/include/c++/15/bits/vector.tcc:
 
+/usr/include/x86_64-linux-gnu/qt6/QtGui/QSurfaceFormat:
+
 /usr/include/locale.h:
 
 /usr/include/c++/15/bits/allocated_ptr.h:
@@ -1460,8 +1459,6 @@ src/ui/ve_ui_autogen/moc_predefs.h:
 
 /usr/include/nlohmann/json.hpp:
 
-/usr/include/nlohmann/json_fwd.hpp:
-
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtdeprecationdefinitions.h:
 
 /usr/include/pthread.h:
@@ -1517,6 +1514,10 @@ src/ui/ve_ui_autogen/moc_predefs.h:
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/usr/include/nlohmann/json_fwd.hpp:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/QImage:
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
@@ -1660,8 +1661,6 @@ src/ui/ve_ui_autogen/moc_predefs.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/QElapsedTimer:
-
 /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/q20type_traits.h:
@@ -1725,8 +1724,6 @@ src/ui/ve_ui_autogen/moc_predefs.h:
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerinfo.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qelapsedtimer.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qendian.h:
 

@@ -191,6 +191,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-4.2/Modules/FindOpenGL.cmake"
   "/usr/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake"
   "/usr/share/cmake-4.2/Modules/FindPackageMessage.cmake"
+  "/usr/share/cmake-4.2/Modules/FindPkgConfig.cmake"
   "/usr/share/cmake-4.2/Modules/FindThreads.cmake"
   "/usr/share/cmake-4.2/Modules/FindVulkan.cmake"
   "/usr/share/cmake-4.2/Modules/GNUInstallDirs.cmake"

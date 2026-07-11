@@ -600,6 +600,7 @@ src/playback/CMakeFiles/ve_playback_autogen.dir/clean:
 
 # All Build rule for target.
 src/ui/CMakeFiles/ve_ui.dir/all: src/core/CMakeFiles/ve_core.dir/all
+src/ui/CMakeFiles/ve_ui.dir/all: src/render/CMakeFiles/ve_render.dir/all
 src/ui/CMakeFiles/ve_ui.dir/all: src/playback/CMakeFiles/ve_playback.dir/all
 src/ui/CMakeFiles/ve_ui.dir/all: src/ui/CMakeFiles/ve_ui_autogen_timestamp_deps.dir/all
 src/ui/CMakeFiles/ve_ui.dir/all: src/ui/CMakeFiles/ve_ui_autogen.dir/all
@@ -610,7 +611,7 @@ src/ui/CMakeFiles/ve_ui.dir/all: src/ui/CMakeFiles/ve_ui_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 src/ui/CMakeFiles/ve_ui.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/CMakeFiles 24
+	$(CMAKE_COMMAND) -E cmake_progress_start /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/CMakeFiles 30
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/ui/CMakeFiles/ve_ui.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/CMakeFiles 0
 .PHONY : src/ui/CMakeFiles/ve_ui.dir/rule
@@ -635,6 +636,7 @@ src/ui/CMakeFiles/ve_ui.dir/clean:
 
 # All Build rule for target.
 src/ui/CMakeFiles/ve_ui_autogen_timestamp_deps.dir/all: src/core/CMakeFiles/ve_core.dir/all
+src/ui/CMakeFiles/ve_ui_autogen_timestamp_deps.dir/all: src/render/CMakeFiles/ve_render.dir/all
 src/ui/CMakeFiles/ve_ui_autogen_timestamp_deps.dir/all: src/playback/CMakeFiles/ve_playback.dir/all
 	$(MAKE) $(MAKESILENT) -f src/ui/CMakeFiles/ve_ui_autogen_timestamp_deps.dir/build.make src/ui/CMakeFiles/ve_ui_autogen_timestamp_deps.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/ui/CMakeFiles/ve_ui_autogen_timestamp_deps.dir/build.make src/ui/CMakeFiles/ve_ui_autogen_timestamp_deps.dir/build
@@ -643,7 +645,7 @@ src/ui/CMakeFiles/ve_ui_autogen_timestamp_deps.dir/all: src/playback/CMakeFiles/
 
 # Build rule for subdir invocation for target.
 src/ui/CMakeFiles/ve_ui_autogen_timestamp_deps.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/CMakeFiles 21
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/ui/CMakeFiles/ve_ui_autogen_timestamp_deps.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/CMakeFiles 0
 .PHONY : src/ui/CMakeFiles/ve_ui_autogen_timestamp_deps.dir/rule
@@ -675,7 +677,7 @@ src/ui/CMakeFiles/ve_ui_autogen.dir/all: src/ui/CMakeFiles/ve_ui_autogen_timesta
 
 # Build rule for subdir invocation for target.
 src/ui/CMakeFiles/ve_ui_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/CMakeFiles 22
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/ui/CMakeFiles/ve_ui_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /run/media/uash/V-Files/VIRTUAL/MAIN/VE/build/CMakeFiles 0
 .PHONY : src/ui/CMakeFiles/ve_ui_autogen.dir/rule

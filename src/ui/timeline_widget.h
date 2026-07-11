@@ -5,6 +5,8 @@
 class Project;
 struct Clip;
 
+enum class TimelineTool { Selection, Razor };
+
 class TimelineWidget : public QWidget {
     Q_OBJECT
 public:
@@ -13,6 +15,8 @@ public:
 
     void setPixelsPerSecond(int pps);
     int pixelsPerSecond() const { return m_pixelsPerSecond; }
+    void setTool(TimelineTool tool);
+    TimelineTool tool() const { return m_tool; }
 
 public slots:
     void setPlayheadTime(const RationalTime& time);
@@ -33,21 +37,31 @@ protected:
     QSize sizeHint() const override { return QSize(800, 200); }
 
 private:
-    int trackY(int index) const;
-    int labelWidth() const { return 80; }
-    int trackHeight() const { return 36; }
+    void paintTrackHeader(QPainter& p, int index, const class Track& track);
+    void razorSplitAt(const QPoint& pos);
+    int snapX(int x, int avoidX = -1) const;
+    RationalTime snapTime(const RationalTime& t, const QString& skipClipId = {}) const;
+
+    struct TrackLayout { int y, h; };
+    int trackY(int index) const { return 2 + index * (m_trackH + 2); }
+    int trackIndexAt(int y) const;
+    int labelWidth() const { return 120; }
+    int trackHeight() const { return m_trackH; }
     int timeToX(const RationalTime& t) const;
     RationalTime xToTime(int x) const;
 
-    enum class DragMode { None, Clip, TrimIn, TrimOut, Playhead };
+    static constexpr int m_trackH = 36;
+    static constexpr int m_snapThreshold = 8; // pixels
 
     Project* m_project = nullptr;
+    TimelineTool m_tool = TimelineTool::Selection;
     int m_pixelsPerSecond = 80;
     RationalTime m_playheadTime{0, 30};
 
     QString m_selTrackId;
     QString m_selClipId;
 
+    enum class DragMode { None, Clip, TrimIn, TrimOut, Playhead };
     DragMode m_dragMode = DragMode::None;
     int m_dragStartX = 0;
     QString m_dragTrackId;

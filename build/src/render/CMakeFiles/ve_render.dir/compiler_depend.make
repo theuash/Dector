@@ -1123,6 +1123,10 @@ src/render/CMakeFiles/ve_render.dir/media_decoder.cpp.o: /run/media/uash/V-Files
   /usr/include/c++/15/bits/exception_defines.h \
   /usr/include/c++/15/bits/exception_ptr.h \
   /usr/include/c++/15/bits/formatfwd.h \
+  /usr/include/c++/15/bits/fs_dir.h \
+  /usr/include/c++/15/bits/fs_fwd.h \
+  /usr/include/c++/15/bits/fs_ops.h \
+  /usr/include/c++/15/bits/fs_path.h \
   /usr/include/c++/15/bits/functexcept.h \
   /usr/include/c++/15/bits/functional_hash.h \
   /usr/include/c++/15/bits/hash_bytes.h \
@@ -1186,10 +1190,12 @@ src/render/CMakeFiles/ve_render.dir/media_decoder.cpp.o: /run/media/uash/V-Files
   /usr/include/c++/15/bits/stl_list.h \
   /usr/include/c++/15/bits/stl_map.h \
   /usr/include/c++/15/bits/stl_multimap.h \
+  /usr/include/c++/15/bits/stl_multiset.h \
   /usr/include/c++/15/bits/stl_numeric.h \
   /usr/include/c++/15/bits/stl_pair.h \
   /usr/include/c++/15/bits/stl_raw_storage_iter.h \
   /usr/include/c++/15/bits/stl_relops.h \
+  /usr/include/c++/15/bits/stl_set.h \
   /usr/include/c++/15/bits/stl_tempbuf.h \
   /usr/include/c++/15/bits/stl_tree.h \
   /usr/include/c++/15/bits/stl_uninitialized.h \
@@ -1204,6 +1210,7 @@ src/render/CMakeFiles/ve_render.dir/media_decoder.cpp.o: /run/media/uash/V-Files
   /usr/include/c++/15/bits/uniform_int_dist.h \
   /usr/include/c++/15/bits/unique_ptr.h \
   /usr/include/c++/15/bits/unordered_map.h \
+  /usr/include/c++/15/bits/unordered_set.h \
   /usr/include/c++/15/bits/uses_allocator.h \
   /usr/include/c++/15/bits/uses_allocator_args.h \
   /usr/include/c++/15/bits/utility.h \
@@ -1217,6 +1224,7 @@ src/render/CMakeFiles/ve_render.dir/media_decoder.cpp.o: /run/media/uash/V-Files
   /usr/include/c++/15/climits \
   /usr/include/c++/15/clocale \
   /usr/include/c++/15/cmath \
+  /usr/include/c++/15/codecvt \
   /usr/include/c++/15/compare \
   /usr/include/c++/15/concepts \
   /usr/include/c++/15/cstddef \
@@ -1237,6 +1245,7 @@ src/render/CMakeFiles/ve_render.dir/media_decoder.cpp.o: /run/media/uash/V-Files
   /usr/include/c++/15/ext/numeric_traits.h \
   /usr/include/c++/15/ext/string_conversions.h \
   /usr/include/c++/15/ext/type_traits.h \
+  /usr/include/c++/15/filesystem \
   /usr/include/c++/15/format \
   /usr/include/c++/15/functional \
   /usr/include/c++/15/initializer_list \
@@ -1249,6 +1258,7 @@ src/render/CMakeFiles/ve_render.dir/media_decoder.cpp.o: /run/media/uash/V-Files
   /usr/include/c++/15/list \
   /usr/include/c++/15/locale \
   /usr/include/c++/15/map \
+  /usr/include/c++/15/math.h \
   /usr/include/c++/15/memory \
   /usr/include/c++/15/new \
   /usr/include/c++/15/numbers \
@@ -1262,6 +1272,7 @@ src/render/CMakeFiles/ve_render.dir/media_decoder.cpp.o: /run/media/uash/V-Files
   /usr/include/c++/15/pstl/pstl_config.h \
   /usr/include/c++/15/ranges \
   /usr/include/c++/15/ratio \
+  /usr/include/c++/15/set \
   /usr/include/c++/15/span \
   /usr/include/c++/15/sstream \
   /usr/include/c++/15/stdexcept \
@@ -1286,6 +1297,7 @@ src/render/CMakeFiles/ve_render.dir/media_decoder.cpp.o: /run/media/uash/V-Files
   /usr/include/c++/15/type_traits \
   /usr/include/c++/15/typeinfo \
   /usr/include/c++/15/unordered_map \
+  /usr/include/c++/15/unordered_set \
   /usr/include/c++/15/utility \
   /usr/include/c++/15/variant \
   /usr/include/c++/15/vector \
@@ -1295,6 +1307,7 @@ src/render/CMakeFiles/ve_render.dir/media_decoder.cpp.o: /run/media/uash/V-Files
   /usr/include/errno.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
+  /usr/include/inttypes.h \
   /usr/include/libintl.h \
   /usr/include/limits.h \
   /usr/include/linux/close_range.h \
@@ -1424,6 +1437,45 @@ src/render/CMakeFiles/ve_render.dir/media_decoder.cpp.o: /run/media/uash/V-Files
   /usr/include/x86_64-linux-gnu/c++/15/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/libavcodec/avcodec.h \
+  /usr/include/x86_64-linux-gnu/libavcodec/codec.h \
+  /usr/include/x86_64-linux-gnu/libavcodec/codec_desc.h \
+  /usr/include/x86_64-linux-gnu/libavcodec/codec_id.h \
+  /usr/include/x86_64-linux-gnu/libavcodec/codec_par.h \
+  /usr/include/x86_64-linux-gnu/libavcodec/defs.h \
+  /usr/include/x86_64-linux-gnu/libavcodec/packet.h \
+  /usr/include/x86_64-linux-gnu/libavcodec/version.h \
+  /usr/include/x86_64-linux-gnu/libavcodec/version_major.h \
+  /usr/include/x86_64-linux-gnu/libavformat/avformat.h \
+  /usr/include/x86_64-linux-gnu/libavformat/avio.h \
+  /usr/include/x86_64-linux-gnu/libavformat/version.h \
+  /usr/include/x86_64-linux-gnu/libavformat/version_major.h \
+  /usr/include/x86_64-linux-gnu/libavutil/attributes.h \
+  /usr/include/x86_64-linux-gnu/libavutil/avconfig.h \
+  /usr/include/x86_64-linux-gnu/libavutil/avutil.h \
+  /usr/include/x86_64-linux-gnu/libavutil/buffer.h \
+  /usr/include/x86_64-linux-gnu/libavutil/channel_layout.h \
+  /usr/include/x86_64-linux-gnu/libavutil/common.h \
+  /usr/include/x86_64-linux-gnu/libavutil/dict.h \
+  /usr/include/x86_64-linux-gnu/libavutil/error.h \
+  /usr/include/x86_64-linux-gnu/libavutil/frame.h \
+  /usr/include/x86_64-linux-gnu/libavutil/hwcontext.h \
+  /usr/include/x86_64-linux-gnu/libavutil/imgutils.h \
+  /usr/include/x86_64-linux-gnu/libavutil/intfloat.h \
+  /usr/include/x86_64-linux-gnu/libavutil/log.h \
+  /usr/include/x86_64-linux-gnu/libavutil/macros.h \
+  /usr/include/x86_64-linux-gnu/libavutil/mathematics.h \
+  /usr/include/x86_64-linux-gnu/libavutil/mem.h \
+  /usr/include/x86_64-linux-gnu/libavutil/pixdesc.h \
+  /usr/include/x86_64-linux-gnu/libavutil/pixfmt.h \
+  /usr/include/x86_64-linux-gnu/libavutil/rational.h \
+  /usr/include/x86_64-linux-gnu/libavutil/samplefmt.h \
+  /usr/include/x86_64-linux-gnu/libavutil/version.h \
+  /usr/include/x86_64-linux-gnu/libswscale/swscale.h \
+  /usr/include/x86_64-linux-gnu/libswscale/version.h \
+  /usr/include/x86_64-linux-gnu/libswscale/version_major.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QFile \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
@@ -1434,6 +1486,7 @@ src/render/CMakeFiles/ve_render.dir/media_decoder.cpp.o: /run/media/uash/V-Files
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q23type_traits.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q23utility.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qalloc.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qanystringview.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydata.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydataops.h \
@@ -1458,9 +1511,13 @@ src/render/CMakeFiles/ve_render.dir/media_decoder.cpp.o: /run/media/uash/V-Files
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerfwd.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerinfo.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainertools_impl.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontiguouscache.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdarwinhelpers.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qexceptionhandling.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfile.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfiledevice.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qflags.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qfloat16.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qforeach.h \
@@ -1469,7 +1526,9 @@ src/render/CMakeFiles/ve_render.dir/media_decoder.cpp.o: /run/media/uash/V-Files
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qgenericatomic.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobalstatic.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevicebase.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterable.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterator.h \
@@ -1478,6 +1537,7 @@ src/render/CMakeFiles/ve_render.dir/media_decoder.cpp.o: /run/media/uash/V-Files
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qlogging.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qmalloc.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qmargins.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qmath.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetacontainer.h \
@@ -1497,6 +1557,11 @@ src/render/CMakeFiles/ve_render.dir/media_decoder.cpp.o: /run/media/uash/V-Files
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopedpointer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopeguard.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata_impl.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer_impl.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qsize.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qspan.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qstdlibdetection.h \
@@ -1523,6 +1588,7 @@ src/render/CMakeFiles/ve_render.dir/media_decoder.cpp.o: /run/media/uash/V-Files
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtdeprecationdefinitions.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtdeprecationmarkers.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtenvironmentvariables.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtformat_impl.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtnoop.h \
@@ -1535,6 +1601,7 @@ src/render/CMakeFiles/ve_render.dir/media_decoder.cpp.o: /run/media/uash/V-Files
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtypes.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qutf8stringview.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h \
@@ -2076,6 +2143,48 @@ src/render/ve_render_autogen/EWIEGA46WW/moc_media_decoder.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h:
 
+/usr/include/x86_64-linux-gnu/libswscale/version_major.h:
+
+/usr/include/x86_64-linux-gnu/libswscale/swscale.h:
+
+/usr/include/x86_64-linux-gnu/libavutil/rational.h:
+
+/usr/include/x86_64-linux-gnu/libavutil/pixfmt.h:
+
+/usr/include/x86_64-linux-gnu/libavutil/pixdesc.h:
+
+/usr/include/x86_64-linux-gnu/libavutil/mem.h:
+
+/usr/include/x86_64-linux-gnu/libavutil/macros.h:
+
+/usr/include/x86_64-linux-gnu/libavutil/intfloat.h:
+
+/usr/include/x86_64-linux-gnu/libavutil/imgutils.h:
+
+/usr/include/x86_64-linux-gnu/libavutil/error.h:
+
+/usr/include/x86_64-linux-gnu/libavutil/dict.h:
+
+/usr/include/x86_64-linux-gnu/libavutil/common.h:
+
+/usr/include/x86_64-linux-gnu/libavutil/log.h:
+
+/usr/include/x86_64-linux-gnu/libavutil/attributes.h:
+
+/usr/include/x86_64-linux-gnu/libavformat/version_major.h:
+
+/usr/include/x86_64-linux-gnu/libavformat/avformat.h:
+
+/usr/include/x86_64-linux-gnu/libavcodec/packet.h:
+
+/usr/include/x86_64-linux-gnu/libavcodec/defs.h:
+
+/usr/include/x86_64-linux-gnu/libavcodec/codec_par.h:
+
+/usr/include/x86_64-linux-gnu/libavcodec/codec_id.h:
+
+/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:
+
 /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/render/media_decoder.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h:
@@ -2105,6 +2214,8 @@ src/render/ve_render_autogen/EWIEGA46WW/moc_export_pipeline.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qsize.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h:
+
+/usr/include/x86_64-linux-gnu/libavutil/samplefmt.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h:
 
@@ -2164,6 +2275,8 @@ src/render/ve_render_autogen/EWIEGA46WW/moc_export_pipeline.cpp:
 
 /usr/include/c++/15/unordered_map:
 
+/usr/include/c++/15/math.h:
+
 /usr/include/c++/15/chrono:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtaggedpointer.h:
@@ -2212,6 +2325,8 @@ src/render/ve_render_autogen/EWIEGA46WW/moc_export_pipeline.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
+/usr/include/x86_64-linux-gnu/libavutil/avconfig.h:
+
 /usr/include/c++/15/sstream:
 
 /usr/include/c++/15/set:
@@ -2235,6 +2350,8 @@ src/render/ve_render_autogen/EWIEGA46WW/moc_export_pipeline.cpp:
 /usr/include/c++/15/new:
 
 /usr/include/linux/errno.h:
+
+/usr/include/x86_64-linux-gnu/libavutil/avutil.h:
 
 /run/media/uash/V-Files/VIRTUAL/MAIN/VE/src/render/export_pipeline.h:
 
@@ -2269,6 +2386,8 @@ src/render/ve_render_autogen/EWIEGA46WW/moc_export_pipeline.cpp:
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
 /usr/include/endian.h:
+
+/usr/include/x86_64-linux-gnu/libavutil/mathematics.h:
 
 /usr/include/stdint.h:
 
@@ -2336,6 +2455,8 @@ src/render/ve_render_autogen/EWIEGA46WW/moc_export_pipeline.cpp:
 
 /usr/include/c++/15/bits/functexcept.h:
 
+/usr/include/x86_64-linux-gnu/libavutil/buffer.h:
+
 /usr/include/c++/15/bits/streambuf_iterator.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
@@ -2399,6 +2520,8 @@ src/render/ve_render_autogen/EWIEGA46WW/moc_export_pipeline.cpp:
 /usr/include/c++/15/bits/memory_resource.h:
 
 /usr/include/c++/15/bits/stl_function.h:
+
+/usr/include/x86_64-linux-gnu/libavcodec/codec_desc.h:
 
 /usr/include/nlohmann/detail/input/input_adapters.hpp:
 
@@ -2488,6 +2611,8 @@ src/render/ve_render_autogen/EWIEGA46WW/moc_export_pipeline.cpp:
 
 /usr/include/c++/15/bits/atomic_base.h:
 
+/usr/include/x86_64-linux-gnu/libswscale/version.h:
+
 /usr/include/linux/limits.h:
 
 /usr/include/c++/15/tr1/modified_bessel_func.tcc:
@@ -2541,6 +2666,8 @@ src/render/ve_render_autogen/EWIEGA46WW/moc_export_pipeline.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject_impl.h:
 
 /usr/include/c++/15/bits/specfun.h:
+
+/usr/include/x86_64-linux-gnu/libavutil/frame.h:
 
 /usr/include/c++/15/format:
 
@@ -2614,6 +2741,8 @@ src/render/ve_render_autogen/EWIEGA46WW/moc_export_pipeline.cpp:
 
 /usr/include/c++/15/bits/memoryfwd.h:
 
+/usr/include/x86_64-linux-gnu/libavcodec/codec.h:
+
 /usr/include/asm-generic/int-ll64.h:
 
 /usr/include/c++/15/bits/locale_facets_nonio.tcc:
@@ -2673,6 +2802,8 @@ src/render/ve_render_autogen/mocs_compilation.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h:
 
 /usr/include/ctype.h:
+
+/usr/include/x86_64-linux-gnu/libavformat/avio.h:
 
 /usr/include/c++/15/bits/locale_conv.h:
 
@@ -2910,6 +3041,8 @@ src/render/ve_render_autogen/mocs_compilation.cpp:
 
 /usr/include/nlohmann/thirdparty/hedley/hedley_undef.hpp:
 
+/usr/include/x86_64-linux-gnu/libavcodec/version_major.h:
+
 /usr/include/pthread.h:
 
 /usr/include/sched.h:
@@ -3092,6 +3225,10 @@ src/render/ve_render_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
+/usr/include/x86_64-linux-gnu/libavutil/hwcontext.h:
+
+/usr/include/x86_64-linux-gnu/libavutil/channel_layout.h:
+
 /usr/include/c++/15/bits/atomic_wait.h:
 
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
@@ -3107,6 +3244,8 @@ src/render/ve_render_autogen/mocs_compilation.cpp:
 /usr/include/x86_64-linux-gnu/c++/15/bits/ctype_base.h:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/error_constants.h:
+
+/usr/include/x86_64-linux-gnu/libavformat/version.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtdeprecationmarkers.h:
 
@@ -3280,6 +3419,8 @@ src/render/ve_render_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringbuilder.h:
 
+/usr/include/x86_64-linux-gnu/libavcodec/version.h:
+
 /usr/include/unistd.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringconverter_base.h:
@@ -3293,5 +3434,7 @@ src/render/ve_render_autogen/mocs_compilation.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobalstatic.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtclasshelpermacros.h:
+
+/usr/include/x86_64-linux-gnu/libavutil/version.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtcoreexports.h:
